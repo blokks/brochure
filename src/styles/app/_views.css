@@ -1,0 +1,10 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
