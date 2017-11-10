@@ -7,7 +7,7 @@
     @include('brochure::views/header')
     @include('brochure::views/how-it-works')
     @include('brochure::views/pricing')
-    @include('brochure::views/contact')
+    @include('brochure::views/call-to-action')
     @include('brochure::views/footer')
 
 @stop

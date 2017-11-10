@@ -1,8 +1,18 @@
+@import 'views/navigation';
+@import 'views/header';
+@import 'views/how-it-works';
+@import 'views/pricing';
+@import 'views/call-to-action';
+@import 'views/footer';
+
 html {
     font-size: 62.5%;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--default-background-color);
 }
 
 *, *:after, *:before {

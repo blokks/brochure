@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__link--home > i {
+        text-transform: uppercase;
+
+        &:nth-child(1) { color: var(--blue-color); }
+        &:nth-child(2) { color: var(--pink-color); }
+        &:nth-child(3) { color: var(--yellow-color); }
+        &:nth-child(4) { color: var(--green-color); }
+        &:nth-child(5) { color: var(--purple-color); }
+        &:nth-child(6) { color: var(--grey-color); }
+    }
+
+    &__legal {
+
+    }
+}

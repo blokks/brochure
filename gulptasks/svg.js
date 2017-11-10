@@ -14,16 +14,16 @@ gulp.task('svg', () => {
     const destination = './dist/images';
 
     const debugOptions = {
-        title: 'SVG:', 
+        title: 'SVG:',
         showFiles: false,
     };
 
-    const revOptions = { 
-        base: './dist', 
-        merge: true, 
+    const revOptions = {
+        base: './dist',
+        merge: true,
     };
 
-    let myOptions = {
+    let spriteOptions = {
         svg: {
             xmlDeclaration: false,
             rootAttributes: {
@@ -48,6 +48,7 @@ gulp.task('svg', () => {
     return gulp.src(source)
         .pipe(debug(debugOptions))
         .pipe(svgmin({ plugins: [myPlugins] })).on('error', errors)
+        .pipe(svgsprite(spriteOptions))
         .pipe(gulpif(isProduction, rev()))
         .pipe(gulp.dest(destination))
         .pipe(gulpif(isProduction, rev.manifest('./dist/rev-manifest.json', revOptions)))
