@@ -1,6 +1,7 @@
 @import 'views/navigation';
 @import 'views/header';
 @import 'views/how-it-works';
+@import 'views/showcase';
 @import 'views/pricing';
 @import 'views/call-to-action';
 @import 'views/footer';

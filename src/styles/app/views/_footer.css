@@ -2,13 +2,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 15px;
 
     &__links {
         display: flex;
         flex-direction: row;
     }
 
+    &__links > li:not(:first-child) {
+        margin-left: 25px;
+    }
+
+    &__link {
+        @mixin navitem;
+        display: inline-block;
+    }
+
     &__link--home > i {
+        letter-spacing: 6px;
         text-transform: uppercase;
 
         &:nth-child(1) { color: var(--blue-color); }
@@ -19,7 +30,12 @@
         &:nth-child(6) { color: var(--grey-color); }
     }
 
-    &__legal {
+    &__link--terms {
+        color: var(--dark-text-color);
+    }
 
+    &__copyright {
+        @mixin legal;
+        margin-left: 25px;
     }
 }

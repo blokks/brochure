@@ -1,0 +1,27 @@
+.showcase {
+    background-color: var(--light-background-color);
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+        padding: 150px 50px;
+        max-width: 1100px;
+        min-height: 100vh;
+    }
+
+    &__title {
+        @mixin title;
+        text-align: center;
+    }
+
+    &__subtitle {
+        @mixin subtitle;
+        color: var(--darkest-text-color);
+        text-align: center;
+        margin-top: 15px;
+    }
+}

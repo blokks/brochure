@@ -1,5 +1,12 @@
 :root {
     --default-background-color: #282b2f;
+    --light-background-color: #abb1bc;
+    --lightest-background-color: #e2e4e6;
+
+    --dark-text-color: #8a8f98;
+    --darkest-text-color: #282b2f;
+    --light-text-color: #abb1bc;
+    --lightest-text-color: #fff;
 
     --blue-color: #2e8cd2;
     --pink-color: #c83a6f;

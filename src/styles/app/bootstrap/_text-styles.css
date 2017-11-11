@@ -1,0 +1,51 @@
+@define-mixin title {
+    @mixin blokks-sans 3.4rem/1.35;
+    color: var(--lightest-text-color);
+}
+
+@define-mixin subtitle {
+    @mixin blokks-mono 1.5rem/1.4;
+    color: inherit;
+}
+
+@define-mixin bodytext {
+    @mixin blokks-sans 1.8rem/1.67;
+    color: inherit;
+
+    a {
+        color: var(--blue-color);
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid;
+    }
+
+    a:hover {
+        color: var(--green-color);
+    }
+}
+
+@define-mixin navitem {
+    @mixin blokks-mono 1.3rem;
+    color: var(--light-text-color);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--lightest-text-color);
+    }
+}
+
+@define-mixin legal {
+    @mixin blokks-mono 1.3rem;
+    color: var(--dark-text-color);
+}
+
+@define-mixin listitem {
+    @mixin blokks-mono 1.5rem/1.86;
+    color: inherit;
+}
+
+@define-mixin button {
+    @mixin blokks-mono 1.5rem;
+    color: var(--lightest-text-color);
+    text-decoration: none;
+}

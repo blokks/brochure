@@ -9,9 +9,8 @@
         background-color: var(--default-background-color);
     }
 
-
     @supports (backdrop-filter: blur(4px)) {
-        background-color: color(var(--default-background-color) alpha(92%));
+        background-color: color(var(--default-background-color) alpha(85%));
         backdrop-filter: blur(4px)
     }
 
@@ -22,11 +21,45 @@
     &__links {
         display: flex;
         flex-direction: row;
+        margin-left: 20px;
+    }
+
+    &__links > li:not(:first-child) {
+        margin-left: 25px;
     }
 
     &__account {
         display: flex;
         flex-direction: row;
         margin-left: auto;
+    }
+
+    &__link {
+        @mixin navitem;
+        display: inline-block;
+        padding: 14px 0 0 0;
+        height: 40px;
+    }
+
+    &__link--active {
+        color: var(--lightest-text-color);
+    }
+
+    &__link--signin,
+    &__link--try {
+        padding: 14px 40px 0;
+        color: var(--lightest-text-color);
+    }
+
+    &__link--signin:hover {
+        color: var(--green-color);
+    }
+
+    &__link--try {
+        background-color: var(--blue-color);
+    }
+
+    &__link--try:hover {
+        background-color: var(--green-color);
     }
 }

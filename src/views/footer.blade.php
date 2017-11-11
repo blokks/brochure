@@ -7,7 +7,7 @@
     </ol>
 
     <div class='footer__legal'>
-        <a href='/' class='footer__link'>Terms & Privacy</a>
+        <a href='/' class='footer__link footer__link--terms'>Terms & Privacy</a>
         <span class='footer__copyright'>© 2017 Blokks</span>
     </div>
 </footer>

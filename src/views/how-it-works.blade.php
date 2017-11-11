@@ -1,7 +1,7 @@
 <section class='how-it-works how-it-works--add-your-lineup'>
     <div class='how-it-works__content'>
-        <h1 clas='how-it-works__title'>Add your lineup</h1>
-        <h2 clas='how-it-works__subtitle'>Always up to date</h2>
+        <h1 class='how-it-works__title'>Add your lineup</h1>
+        <h2 class='how-it-works__subtitle'>Always up to date</h2>
 
         <p class='how-it-works__description'>
             Use our powerful CMS to update all your acts and speakers. Add multiple days and stages so you can make sure your visitors have all the information they need.
@@ -28,8 +28,8 @@
 
 <section class='how-it-works how-it-works--embed-your-timetable'>
     <div class='how-it-works__content'>
-        <h1 clas='how-it-works__title'>Embed your timetable</h1>
-        <h2 clas='how-it-works__subtitle'>Up and running in no time</h2>
+        <h1 class='how-it-works__title'>Embed your timetable</h1>
+        <h2 class='how-it-works__subtitle'>Up and running in no time</h2>
 
         <p class='how-it-works__description'>
             Add a few lines of code to your website to add your timetable on both desktop and mobile. Visitors can save favorite acts by connecting their social media accounts.
@@ -55,8 +55,8 @@
 
 <section class='how-it-works how-it-works--built-for-developers'>
     <div class='how-it-works__content'>
-        <h1 clas='how-it-works__title'>Built for developers</h1>
-        <h2 clas='how-it-works__subtitle'>Customize your design</h2>
+        <h1 class='how-it-works__title'>Built for developers</h1>
+        <h2 class='how-it-works__subtitle'>Customize your design</h2>
 
         <p class='how-it-works__description'>
             Match the design of your timetable to your event’s branding with some simple CSS tweaks. You can change colors, typography or go all out and create your own design.

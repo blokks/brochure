@@ -1,21 +1,101 @@
 .pricing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--lightest-background-color);
 
-    margin: 0 auto;
-    padding: 0 50px;
-    max-width: 1100px;
-    min-height: 100vh;
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+        padding: 150px 50px;
+        max-width: 1100px;
+        min-height: 100vh;
+    }
+
+    &__title {
+        @mixin subtitle;
+        color: var(--dark-text-color);
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    &__subtitle {
+        @mixin title;
+        color: var(--darkest-text-color);
+        text-align: center;
+    }
 
     &__table {
         display: flex;
         flex-direction: row;
+        margin-top: 60px;
         width: 100%;
     }
 
-    &__option {
-        width: 50%;
+    &__footer {
+        @mixin bodytext;
+        color: var(--darkest-text-color);
+        margin-top: 60px;
+    }
+}
+
+.price-option {
+    border: 1px solid #ABB1BC;
+    flex: 1;
+
+    &--upgrade {
+        margin-left: -1px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px 20px;
+    }
+
+    &--free &__header {
+        background-color: var(--blue-color);
+    }
+
+    &--upgrade &__header {
+        background-color: var(--light-background-color);
+    }
+
+    &__title {
+        @mixin title;
+        order: 2;
+    }
+
+    &__subtitle {
+        @mixin subtitle;
+        color: var(--lightest-text-color);
+        order: 1;
+    }
+
+    &__details {
+        padding: 40px;
+        color: var(--darkest-text-color);
+    }
+
+    &__description {
+        @mixin bodytext;
+        color: inherit;
+    }
+
+    &__features {
+        @mixin listitem;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 15px;
+        list-style-type: square;
+    }
+
+    &__features > li {
+        margin: 0;
+        padding: 0 0 0 10px;
+    }
+
+    &__features > li:not(:first-of-type) {
+        margin-top: 10px;
     }
 }

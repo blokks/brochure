@@ -12,4 +12,15 @@
     &__logo {
         size: 360px 60px;
     }
+
+    &__title {
+        @mixin title;
+        margin-top: 30px;
+    }
+
+    &__subtitle {
+        @mixin bodytext;
+        color: var(--light-text-color);
+        margin-top: 15px;
+    }
 }
