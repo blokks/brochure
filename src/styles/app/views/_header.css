@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: center;
 
-    margin: 0 auto;
+    margin: 40px auto 0;
     padding: 150px 50px;
     max-width: 1100px;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
 
     &__logo {
         size: 360px 60px;
@@ -22,5 +22,14 @@
         @mixin bodytext;
         color: var(--light-text-color);
         margin-top: 15px;
+    }
+
+    &__continue-link {
+        @mixin blokks-mono 1.5rem;
+        color: var(--green-color);
+        text-decoration: none;
+
+        margin-top: 30px;
+        border-bottom: 1px solid;
     }
 }

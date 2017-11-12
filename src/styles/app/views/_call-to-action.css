@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 150px 50px;
     max-width: 1100px;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
 
     &__title {
         @mixin title;
@@ -22,7 +22,7 @@
     &__action-button {
         @mixin button;
         margin: 40px 0 0 0;
-        padding: 20px 120px 18px 120px;
+        padding: 22px 120px 20px 120px;
         background-color: var(--blue-color);
     }
 

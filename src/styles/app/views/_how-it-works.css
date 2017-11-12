@@ -1,15 +1,21 @@
 .how-it-works {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    margin: 0 auto;
     padding: 150px 50px;
-    max-width: 1100px;
     min-height: 100vh;
 
-    &__content {
+    & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    &__info {
         flex: 1;
     }
 
@@ -56,11 +62,27 @@
     }
 
     &__media {
+        position: relative;
         flex: 2;
     }
 
+    &:nth-of-type(even) &__media {
+        margin-left: 7.25%;
+    }
 
     &:nth-of-type(odd) &__media {
+        margin-right: 7.25%;
         order: -1;
+    }
+
+    &__video-wrapper:before {
+        display: block;
+        padding-top: 71.875%;
+        background: rgba(0, 0, 0, 0.1);
+        content: '';
+    }
+
+    &__player {
+        position: absolute 0 * * 0;
     }
 }
