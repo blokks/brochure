@@ -30,7 +30,7 @@
     &__action-button {
         @mixin button;
         margin: 40px 0 0 0;
-        padding: 22px 120px 20px 120px;
+        padding: 22px 100px 20px 100px;
         background-color: var(--blue-color);
     }
 

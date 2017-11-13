@@ -66,7 +66,7 @@
     &__header {
         display: flex;
         flex-direction: column;
-        padding: 30px 40px 20px;
+        padding: calc(30/550*100%) calc(40/550*100%) calc(20/550*100%)
     }
 
     &--free &__header {
@@ -89,7 +89,7 @@
     }
 
     &__details {
-        padding: 40px;
+        padding: calc(40/550*100%);
         color: var(--darkest-text-color);
     }
 

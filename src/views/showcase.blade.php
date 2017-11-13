@@ -1,6 +1,6 @@
 <section class='showcase'>
     <div>
-        <header>
+        <header class='showcase__header'>
             <h1 class='showcase__title'>Built with Blokks</h1>
             <h2 class='showcase__subtitle'>Examples from our clients</h2>
         </header>
