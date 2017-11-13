@@ -29,7 +29,9 @@
     }
 
     &__info {
-        flex: 0 0 380px;
+        @media (--wide), (--widest) {
+            flex: 0 0 380px;
+        }
     }
 
     &__title {

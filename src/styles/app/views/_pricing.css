@@ -1,5 +1,5 @@
 .pricing {
-    min-height: 100vh;
+    // min-height: 100vh;
     background-color: var(--lightest-background-color);
 
     @media (--small), (--default), (--wide) {
@@ -24,13 +24,13 @@
         @mixin subtitle;
         color: var(--dark-text-color);
         text-align: center;
-        margin-top: 15px;
     }
 
     &__subtitle {
         @mixin title;
         color: var(--darkest-text-color);
         text-align: center;
+        margin-top: 15px;
     }
 
     &__table {

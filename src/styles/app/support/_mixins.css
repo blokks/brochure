@@ -10,7 +10,7 @@
 }
 
 @define-mixin text-replacement {
-    text-indent: 102%;
+    text-indent: 105%;
     white-space: nowrap;
     overflow: hidden;
 }
