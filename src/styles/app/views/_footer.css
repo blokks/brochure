@@ -10,6 +10,10 @@
         flex-direction: row;
     }
 
+    &__links > li {
+        flex: none;
+    }
+
     &__links > li:not(:first-child) {
         margin-left: 25px;
     }
@@ -31,12 +35,19 @@
         &:nth-child(6) { color: var(--grey-color); }
     }
 
+    &__legal {
+        display: flex;
+        flex-direction: row;
+    }
+
     &__link--terms {
+        flex: none;
         color: var(--dark-text-color);
     }
 
     &__copyright {
         @mixin legal;
         margin-left: 25px;
+        flex: none;
     }
 }

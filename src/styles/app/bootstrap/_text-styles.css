@@ -1,16 +1,44 @@
 @define-mixin title {
-    @mixin blokks-sans 3.4rem/1.35;
+    @mixin blokks-sans 34px;
+    line-height: 1.35;
     color: var(--lightest-text-color);
+
+    @media (--small) {
+        font-size: 26px;
+    }
+
+    @media (--default), (--wide) {
+        font-size: responsive 26px 34px;
+        font-range: 480px 1100px;
+    }
+
+    @media (--widest) {
+        font-size: 34px;
+    }
 }
 
 @define-mixin subtitle {
-    @mixin blokks-mono 1.5rem/1.4;
+    @mixin blokks-mono 15px/1.4;
     color: inherit;
 }
 
 @define-mixin bodytext {
-    @mixin blokks-sans 1.8rem/1.67;
+    @mixin blokks-sans 18px;
+    line-height: 1.67;
     color: inherit;
+
+    @media (--small) {
+        font-size: 15px;
+    }
+
+    @media (--default), (--wide) {
+        font-size: responsive 15px 18px;
+        font-range: 480px 1000px;
+    }
+
+    @media (--widest) {
+        font-size: 18px;
+    }
 
     a {
         color: var(--blue-color);
@@ -25,7 +53,7 @@
 }
 
 @define-mixin navitem {
-    @mixin blokks-mono 1.3rem;
+    @mixin blokks-mono 13px;
     color: var(--light-text-color);
     text-decoration: none;
 
@@ -35,17 +63,17 @@
 }
 
 @define-mixin legal {
-    @mixin blokks-mono 1.3rem;
+    @mixin blokks-mono 13px;
     color: var(--dark-text-color);
 }
 
 @define-mixin listitem {
-    @mixin blokks-mono 1.5rem/1.86;
+    @mixin blokks-mono 15px/1.86;
     color: inherit;
 }
 
 @define-mixin button {
-    @mixin blokks-mono 1.5rem;
+    @mixin blokks-mono 15px;
     color: var(--lightest-text-color);
     text-decoration: none;
 }

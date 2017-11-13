@@ -14,13 +14,13 @@ const errors = require('../gulperrors');
 
 gulp.task('styles', () => {
     const debugOptions = {
-        title: 'CSS:', 
+        title: 'CSS:',
         showFiles: false,
     };
 
-    const revOptions = { 
-        base: './dist', 
-        merge: true, 
+    const revOptions = {
+        base: './dist',
+        merge: true,
     };
 
     const CSSNextOptions = {
@@ -65,6 +65,7 @@ gulp.task('styles', () => {
         require('postcss-easings'),
         require('postcss-animation'),
         require('postcss-short'),
+        require('postcss-responsive-type'),
         require('postcss-cssnext')(CSSNextOptions),
         require('postcss-assets')(assetOptions),
         require('postcss-sorting')(sortingOptions),

@@ -1,5 +1,5 @@
 <header class='header'>
-    <svg class='header__logo'>
+    <svg class='header__logo' viewBox='0 0 360 60'>
         <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#colored-logo') }}'></use>
     </svg>
 

@@ -16,6 +16,10 @@ body {
     background-color: var(--default-background-color);
 }
 
+main {
+    min-width: 320px;
+}
+
 *, *:after, *:before {
     box-sizing: border-box;
 }

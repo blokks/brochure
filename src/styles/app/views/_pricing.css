@@ -1,5 +1,14 @@
 .pricing {
+    min-height: 100vh;
     background-color: var(--lightest-background-color);
+
+    @media (--small), (--default), (--wide) {
+        padding: calc(150/1100*100%) calc(50/1100*100%);
+    }
+
+    @media (--widest) {
+        padding: 150px 50px;
+    }
 
     & > div {
         display: flex;
@@ -8,9 +17,7 @@
         justify-content: center;
 
         margin: 0 auto;
-        padding: 150px 50px;
         max-width: 1100px;
-        min-height: 100vh;
     }
 
     &__title {
@@ -28,13 +35,21 @@
 
     &__table {
         display: flex;
-        flex-direction: row;
         margin-top: 60px;
         width: 100%;
+
+        @media (--small), (--default) {
+            flex-direction: column;
+        }
+
+        @media (--wide), (--widest) {
+            flex-direction: row;
+        }
     }
 
     &__footer {
         @mixin bodytext;
+        text-align: center;
         color: var(--darkest-text-color);
         margin-top: 60px;
     }

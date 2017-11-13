@@ -82,6 +82,7 @@
     "postcss-easings": "^0.3.0",
     "postcss-mq-keyframes": "^0.3.0",
     "postcss-reporter": "^3.0.0",
+    "postcss-responsive-type": "^1.0.0",
     "postcss-short": "^3.0.1",
     "postcss-sorting": "^2.1.0",
     "precss": "^1.4.0",
