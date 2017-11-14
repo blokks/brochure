@@ -41,7 +41,10 @@
         position: relative;
         width: 100%;
         margin: 60px 0 0 0;
-        background: red;
+
+        @media (--small) {
+            display: none;
+        }
     }
 
     &__slideshow:before {
@@ -58,48 +61,95 @@
     &__slide-selector {
         display: flex;
         flex-direction: row;
-        justify-content: stretch;
-
         margin-top: 40px;
         width: 100%;
+
+        @media (--small), (--default) {
+            flex-wrap: wrap;
+        }
+
+        @media (--wide), (--widest) {
+            flex-wrap: nowrap;
+            justify-content: stretch;
+        }
     }
 
     &__slide-selector > li {
         position: relative;
-        width: 25%;
         z-index: 1;
+
+        @media (--small), (--default) {
+            width: 50%;
+        }
+
+        @media (--wide), (--widest) {
+            width: 25%;
+        }
     }
 
     &__slide-button {
-        @mixin text-replacement;
-        position: relative;
-        size: 100% 100px;
+        display: flex;
+        padding: 0;
+        width: 100%;
 
-        background: none;
-        background-size: 225px 300px;
-        background-position: center 0;
+        background-color: var(--light-background-color);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
 
         border: 1px solid #8A8F98;
         border-radius: 0;
         outline: none;
         cursor: pointer;
+
+    }
+
+    &__slide-button:before {
+        display: block;
+        content: '';
+        padding-top: calc(200/376*100%);
+    }
+
+    &__slide-button span {
+        @mixin text-replacement;
+        margin: auto;
+        background-size: 100%;
     }
 
     &__slide-selector > li:not(:first-of-type) &__slide-button {
         border-left: 0;
     }
 
-    &__slide-button:not(&__slide-button--selected):hover {
-        background-position: center -100px;
+    &__slide-button:not(&__slide-button--selected):hover span {
+        background-position: center -100%;
     }
 
     &__slide-button--selected {
-        background-position: center -200px;
         border: none;
     }
 
+    &__slide-button--selected span {
+        background-position: center -200%;
+    }
+
     &__website-link {
+        @mixin blokks-mono 13px;
+        text-decoration: none;
+        text-align: center;
+        color: #44494E;
+
         position: absolute * * 0 *;
+        width: 100%;
+        outline: none;
         z-index: -1;
+
+        transition: transform 100ms;
+    }
+
+    &__website-link:hover {
+        color: var(--purple-color);
+    }
+
+    &__slide-button--selected + &__website-link {
+        transform: translateY(30px);
     }
 }
