@@ -1,4 +1,4 @@
-<section class='call-to-action'>
+<section id='contact' class='call-to-action' data-view>
     <div class='call-to-action__content'>
         <h1 class='call-to-action__title'>Want to give it a try?</h1>
 

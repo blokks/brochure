@@ -1,44 +1,41 @@
-@keyframes animation-01 {
-    0% { height: 20%; }
-    25% { height: 20%; }
-    33% { height: 30%; }
-    80% { height: 30%; }
-    85% { height: 20%; }
-    100% { height: 20%; }
+@keyframes scale-square-animation-01 {
+    0%, 5% { height: 20%; }
+    10%, 50% { height: 40%; }
+    55%, 100% { height: 20%; }
 }
 
-@keyframes animation-02 {
-    0% { width: 30%; }
-    25% { width: 30%; }
-    33% { width: 20%; }
-    80% { width: 20%; }
-    85% { width: 30%; }
-    100% { width: 30%; }
+@keyframes scale-square-animation-02 {
+    0%, 15% { width: 30%; }
+    25%, 60% { width: 20%; }
+    70%, 100% { width: 30%; }
 }
 
-@keyframes animation-03 {
-    0% { height: 40%; }
-    25% { height: 40%; }
-    33% { height: 20%; }
-    80% { height: 20%; }
-    85% { height: 40%; }
-    100% { height: 40%; }
+@keyframes scale-square-animation-03 {
+    0%, 20% { height: 40%; }
+    30%, 75% { height: 20%; }
+    85%, 100% { height: 40%; }
 }
 
-@keyframes animation-04 {
-    0% { height: 20%; }
-    25% { height: 20%; }
-    33% { height: 40%; }
-    80% { height: 40%; }
-    85% { height: 20%; }
-    100% { height: 20%; }
+@keyframes scale-square-animation-04 {
+    0%, 55% { height: 45%; }
+    65%, 85% { height: 15%; }
+    95%, 100% { height: 45%; }
 }
 
-@keyframes animation-05 {
-    0% { width: 20%; }
-    25% { width: 20%; }
-    33% { width: 30%; }
-    80% { width: 30%; }
-    85% { width: 20%; }
-    100% { width: 20%; }
+@keyframes scale-square-animation-05 {
+    0%, 30% { width: 20%; }
+    40%, 75% { width: 30%; }
+    85%, 100% { width: 20%; }
+}
+
+@keyframes rotate-square-animation-01 {
+    0% { transform: none; }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotate-square-animation-02 {
+    0% { transform: none; }
+    50% { transform: rotate(-180deg); }
+    100% { transform: rotate(-360deg); }
 }

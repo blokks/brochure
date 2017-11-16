@@ -12,7 +12,6 @@ export default class AbstractView {
 	}
 
 	initialize(options) {
-		console.log(options.el);
 		if (options.el) {
 			this.el = options.el;
 			this.id = options.el.getAttribute('id');

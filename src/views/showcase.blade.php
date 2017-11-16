@@ -1,5 +1,5 @@
-<section class='showcase'>
-    <div>
+<section id='showcase' class='showcase' data-view>
+    <div class='showcase__content'>
         <header class='showcase__header'>
             <h1 class='showcase__title'>Built with Blokks</h1>
             <h2 class='showcase__subtitle'>Examples from our clients</h2>

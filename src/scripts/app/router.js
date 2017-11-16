@@ -1,62 +1,65 @@
 import $ from 'queryselector.js';
+
 import HowItWorksView from 'app/views/how-it-works.view';
+import NavigationView from 'app/views/navigation.view';
+import AbstractView from './views/abstract.view';
 
 class Router {
 	registeredViews = new Map();
 
 	initialize() {
+		this.initObserver();
+		this.addSubviews();
+	}
+
+	initObserver() {
 		if (window.IntersectionObserver) {
-			const intersectionHandler = entries => {
+			const handler = entries => {
 				entries.forEach(entry => {
 					const view = this.registeredViews.get(entry.target);
-					if (entry.intersectionRatio > 0.5) {
-						view.activate();
+					if (entry.intersectionRatio >= 0.5) {
+						this.activateView(view);
 					} else {
-						view.deactivate();
+						this.deactivateView(view);
 					}
 				});
 			};
 
 			const props = { root: null, rootMargin: '0px', threshold: 0.5 };
-			this.intersectionObserver = new IntersectionObserver(
-				intersectionHandler,
-				props,
-			);
+			this.intersectionObserver = new IntersectionObserver(handler, props);
 		}
-
-		this.addSubviews();
 	}
 
 	addSubviews() {
-		const map = {
-			'how-it-works': HowItWorksView,
-		};
+		const navigation = $('#navigation');
+		this.navigationView = new NavigationView(navigation);
 
-		const views = $('.how-it-works');
-		views.forEach(view => {
-			const className = view.classList[0];
-			const View = map[className];
+		$('main > [data-view]').forEach(view => {
+			let ViewDefinition;
+			switch (view.id) {
+				case 'how-it-works':
+					ViewDefinition = HowItWorksView;
+					break;
+				default:
+					ViewDefinition = AbstractView;
+					break;
+			}
 
-			const view1 = new View(view);
-			this.registerView(view1);
+			if (this.intersectionObserver) {
+				this.intersectionObserver.observe(view);
+				this.registeredViews.set(view, new ViewDefinition(view));
+			}
 		});
 	}
 
-	registerView = view => {
-		if (this.intersectionObserver && !this.registeredViews.has(view.el)) {
-			this.intersectionObserver.observe(view.el);
-			this.registeredViews.set(view.el, view);
-		} else if (!this.intersectionObserver) {
-			view.activate();
-		}
-	};
+	activateView(view) {
+		this.navigationView.setCurrentView(view.el.id);
+		view.activate();
+	}
 
-	unregisterView = activity => {
-		if (this.intersectionObserver && this.registeredViews.has(activity.el)) {
-			this.intersectionObserver.unobserve(activity.el);
-			this.registeredViews.delete(activity.el);
-		}
-	};
+	deactivateView(view) {
+		view.deactivate();
+	}
 }
 
 export default new Router();

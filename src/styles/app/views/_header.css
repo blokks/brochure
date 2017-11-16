@@ -54,6 +54,7 @@
     &__animation {
         position: absolute 0 * * 0;
         size: 100%;
+        z-index: -1;
 
         @media (--small), (--default) {
             display: none;
@@ -61,39 +62,39 @@
     }
 
     &__animation svg:nth-of-type(1) {
-        position: absolute 35% 75% * *;
+        position: absolute 35% 72.5% * *;
         size: 15% 30%;
-        animation: animation-01 15s infinite;
+        animation: scale-square-animation-01 27s infinite;
     }
 
     &__animation svg:nth-of-type(2) {
         position: absolute 5% * * 20%;
-        size: 30% 20%;
-        animation: animation-02 20s infinite;
+        size: 30% 25%;
+        animation: scale-square-animation-02 24s infinite;
     }
 
     &__animation svg:nth-of-type(3) {
-        position: absolute * 50% -5% *;
+        position: absolute * 45% -5% *;
         size: 20% 40%;
-        animation: animation-03 25s infinite;
+        animation: scale-square-animation-03 20s infinite;
     }
 
     &__animation svg:nth-of-type(4) {
-        position: absolute 5% * * 60%;
-        size: 20%;
-        animation: animation-04 18s infinite;
+        position: absolute 15% * * 55%;
+        size: 20% 40%;
+        animation: scale-square-animation-04 17s infinite;
     }
 
     &__animation svg:nth-of-type(5) {
         position: absolute * 10% 15% *;
         size: 15% 20%;
-        animation: animation-05 23s infinite;
+        animation: scale-square-animation-05 22s infinite;
     }
 
     &__animation svg > path {
         fill: none;
-        stroke: color(#fff alpha(0.75));
-        stroke-width: 1;
+        stroke: color(#fff alpha(0.6));
+        stroke-width: 2;
         stroke-dasharray: 1, 15;
         vector-effect: non-scaling-stroke;
     }

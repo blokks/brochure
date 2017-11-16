@@ -1,4 +1,4 @@
-<header class='header'>
+<header id='header' class='header' data-view>
     <div class='header__content'>
         <svg class='header__logo' viewBox='0 0 360 60'>
             <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#colored-logo') }}'></use>

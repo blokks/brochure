@@ -1,5 +1,5 @@
-<section class='how-it-works how-it-works--add-your-lineup'>
-    <div>
+<section id='how-it-works' class='how-it-works how-it-works--add-your-lineup' data-view>
+    <div class='how-it-works__content'>
         <div class='how-it-works__info'>
             <h1 class='how-it-works__title'>Add your lineup</h1>
             <h2 class='how-it-works__subtitle'>Always up to date</h2>
@@ -30,8 +30,8 @@
     </div>
 </section>
 
-<section class='how-it-works how-it-works--embed-your-timetable'>
-    <div>
+<section id='how-it-works' class='how-it-works how-it-works--embed-your-timetable' data-view>
+    <div class='how-it-works__content'>
         <div class='how-it-works__info'>
             <h1 class='how-it-works__title'>Embed your timetable</h1>
             <h2 class='how-it-works__subtitle'>Up and running in no time</h2>
@@ -61,8 +61,8 @@
     </div>
 </section>
 
-<section class='how-it-works how-it-works--built-for-developers'>
-    <div>
+<section id='how-it-works' class='how-it-works how-it-works--built-for-developers' data-view>
+    <div class='how-it-works__content'>
         <div class='how-it-works__info'>
             <h1 class='how-it-works__title'>Built for developers</h1>
             <h2 class='how-it-works__subtitle'>Customize your design</h2>

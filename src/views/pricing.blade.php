@@ -1,5 +1,5 @@
-<section class='pricing'>
-    <div>
+<section id='pricing' class='pricing' data-view>
+    <div class='pricing__content'>
         <header>
             <h1 class='pricing__title'>Simple pricing</h1>
             <h2 class='pricing__subtitle'>Upgrade when you’re ready to go live</h2>
