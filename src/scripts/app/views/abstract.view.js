@@ -9,6 +9,7 @@ export default class AbstractView {
 
 	constructor(el, options = {}) {
 		this.initialize({ el, ...options });
+		this.enable();
 	}
 
 	initialize(options) {

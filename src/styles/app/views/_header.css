@@ -62,8 +62,8 @@
     }
 
     &__animation svg:nth-of-type(1) {
-        position: absolute 35% 72.5% * *;
-        size: 15% 30%;
+        position: absolute 35% 70% * *;
+        size: 20% 30%;
         animation: scale-square-animation-01 27s infinite;
     }
 

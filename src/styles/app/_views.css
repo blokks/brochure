@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--default-background-color);
+    scroll-behavior: smooth;
 }
 
 main {

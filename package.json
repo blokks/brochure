@@ -99,6 +99,8 @@
   "dependencies": {
     "addlistener.js": "^1.0.8",
     "director": "^1.2.8",
+    "jump.js": "^1.0.2",
+    "lodash.debounce": "^4.0.8",
     "queryselector.js": "^1.0.3"
   }
 }
