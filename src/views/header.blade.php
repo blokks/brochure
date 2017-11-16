@@ -8,8 +8,9 @@
 
     <a href='#' class='header__continue-link'>Here's how it works</a>
 
-    <div class="header__animation">
+    <div class='header__animation'>
         <svg viewBox='0 0 300 100' preserveAspectRatio='none'>
+            <path d='M0,0 300,0 300,100 0,100z' vector-effect='non-scaling-stroke'></path>
             <path d='M0,0 300,0 300,100 0,100z' vector-effect='non-scaling-stroke'></path>
         </svg>
     </div>

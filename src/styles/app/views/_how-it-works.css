@@ -30,7 +30,7 @@
 
     &__info {
         @media (--wide), (--widest) {
-            flex: 0 0 380px;
+            flex: 1;
         }
     }
 
@@ -78,7 +78,7 @@
 
     &__media {
         position: relative;
-        width: 100%;
+        flex: 2;
 
         @media (--small), (--default) {
             order: -1;
@@ -100,12 +100,13 @@
 
     &__video-wrapper:before {
         display: block;
-        padding-top: 71.875%;
-        background: rgba(0, 0, 0, 0.1);
+        padding-top: calc(1412/1960*100%);
+        background: #34353a;
         content: '';
     }
 
     &__player {
         position: absolute 0 * * 0;
+        width: 100%;
     }
 }

@@ -18,7 +18,7 @@
 
         <div class='how-it-works__media'>
             <div class='how-it-works__video-wrapper'>
-                <video id='addYourLineupVideo' class='how-it-works__player'></video>
+                <video id='addYourLineupVideo' src='{{ url('/brochure/dist/videos/brochure-add-your-lineup.mp4') }}' reload='none' loop muted playsinline class='how-it-works__player'></video>
             </div>
 
             <ol class='how-it-works__keyframes'>
@@ -49,7 +49,7 @@
 
         <div class='how-it-works__media'>
             <div class='how-it-works__video-wrapper'>
-                <video id='embedYourTimetableVideo' class='how-it-works__player'></video>
+                <video id='embedYourTimetableVideo' src='{{ url('/brochure/dist/videos/brochure-embed-your-timetable.mp4') }}' reload='none' loop muted playsinline class='how-it-works__player'></video>
             </div>
 
             <ol class='how-it-works__keyframes'>
@@ -81,7 +81,7 @@
 
         <div class='how-it-works__media'>
             <div class='how-it-works__video-wrapper'>
-                <video id='builtForDevelopersVideo' class='how-it-works__player'></video>
+                <video id='builtForDevelopersVideo' reload='none' loop muted playsinline class='how-it-works__player'></video>
             </div>
 
             <ol class='how-it-works__keyframes'>
