@@ -7,8 +7,7 @@ import NavigationView from 'app/views/navigation.view';
 import AbstractView from './views/abstract.view';
 
 export default class {
-	isJumping = false;
-	currentPath = '/';
+	jumping = false;
 	views = [];
 
 	constructor() {
@@ -22,7 +21,8 @@ export default class {
 				entries.forEach(entry => {
 					const thisView = this.views.find(view => view.el === entry.target);
 					if (entry.intersectionRatio >= 0.5) {
-						const path = thisView.el.id !== 'header' ? `/${thisView.el.id}` : '/';
+						const path =
+							thisView.el.id !== 'header' ? `/${thisView.el.id}` : '/';
 						navigateTo(path);
 					}
 				});
@@ -59,31 +59,20 @@ export default class {
 	}
 
 	setCurrentView(path, animate = false) {
-
-        if (path === this.currentPath) {
-            return;
-		}
-
-		if (this.isJumping) {
-            return;
-		}
-
-		this.currentPath = path;
 		this.navigationView.setCurrentView(path);
+		this.scrollIntoView(path, animate);
+	}
 
-		if (!animate) {
-            return;
-		}
-
-        path = path !== '/' ? path : '/header';
+	scrollIntoView(path, animate = true) {
+		this.jumping = true;
+		path = path !== '/' ? path : '/header';
 
 		const selectedView = this.views.find(view => view.el.id === path.substr(1));
 		const jumpOptions = {
-			duration: 450,
-			callback: () => (this.isJumping = false),
+			duration: animate ? 600 : 0,
+			callback: () => (this.jumping = false),
 		};
 
-		this.isJumping = true;
 		jump(selectedView.el, jumpOptions);
 	}
 }

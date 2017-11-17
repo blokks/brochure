@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <main class='@yield('className')'>
+        <main class='loading @yield('className')'>
 
             @yield('content')
 
