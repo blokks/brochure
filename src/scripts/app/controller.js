@@ -60,7 +60,10 @@ export default class {
 
 	setCurrentView(path, animate = false) {
 		this.navigationView.setCurrentView(path);
-		this.scrollIntoView(path, animate);
+
+		if (animate) {
+			this.scrollIntoView(path, true);
+		}
 	}
 
 	scrollIntoView(path, animate = true) {

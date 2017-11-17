@@ -14,7 +14,7 @@ class Router {
 		}
 
 		const path = url.parse(window.location.href).path;
-		navigateTo(path, false);
+		controller.scrollIntoView(path, false);
 
 		$('main').classList.remove('loading');
 	}
