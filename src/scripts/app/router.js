@@ -3,25 +3,28 @@ import Controller from 'app/controller';
 
 class Router {
 	initialize() {
+		this.links = window.$('a[href][data-link]');
+		this.links.on('click', this.onLink.bind(this));
+
 		if ('scrollRestoration' in window.history) {
 			window.history.scrollRestoration = 'manual';
 		}
-
-		// this.controller = new Controller();
-		// window.on('pushstate', this.onPushstate.bind(this));
 	}
 
-	onPushstate() {
-		const parsedURL = url.parse(window.location.href);
-		this.controller.setCurrentView(parsedURL.path);
+	onLink(event) {
+		event.preventDefault();
+
+		const parsedURL = url.parse(event.currentTarget.href);
+		navigateTo(parsedURL.path, true);
 	}
 }
 
-export const navigateTo = path => {
-	window.history.replaceState(null, document.title, path);
+const router = new Router();
+const controller = new Controller();
 
-	const pushStateEvent = new CustomEvent('pushstate');
-	window.dispatchEvent(pushStateEvent);
+export const navigateTo = (path, animate = false) => {
+	window.history.replaceState(null, document.title, path);
+	controller.setCurrentView(path, animate);
 };
 
-export default new Router();
+export default router;

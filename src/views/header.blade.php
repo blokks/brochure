@@ -7,7 +7,7 @@
         <h1 class='header__title'>Beautiful timetables done right</h1>
         <h2 class='header__subtitle'>Manage and embed your conferenc & festival timetable with ease.</h2>
 
-        <a href='#' class='header__continue-link'>Here's how it works</a>
+        <a href='/how-it-works' class='header__continue-link' data-link>Here's how it works</a>
     </div>
 
     <div class='header__animation'>

@@ -1,11 +1,12 @@
 import $ from 'queryselector.js';
 import jump from 'jump.js';
 
+import { navigateTo } from 'app/router';
 import HowItWorksView from 'app/views/how-it-works.view';
 import NavigationView from 'app/views/navigation.view';
 import AbstractView from './views/abstract.view';
 
-class Controller {
+export default class {
 	isJumping = false;
 	currentPath = '/';
 	views = [];
@@ -21,7 +22,7 @@ class Controller {
 				entries.forEach(entry => {
 					const thisView = this.views.find(view => view.el === entry.target);
 					if (entry.intersectionRatio >= 0.5) {
-                        const path = thisView.el.id !== 'header' ? `/${thisView.el.id}` : '/';
+						const path = thisView.el.id !== 'header' ? `/${thisView.el.id}` : '/';
 						navigateTo(path);
 					}
 				});
@@ -58,23 +59,27 @@ class Controller {
 	}
 
 	setCurrentView(path, animate = false) {
-		if (path === this.currentPath) {
-			return;
+
+        if (path === this.currentPath) {
+            return;
 		}
 
 		if (this.isJumping) {
-			return;
+            return;
 		}
 
 		this.currentPath = path;
 		this.navigationView.setCurrentView(path);
 
 		if (!animate) {
-			return;
+            return;
 		}
+
+        path = path !== '/' ? path : '/header';
 
 		const selectedView = this.views.find(view => view.el.id === path.substr(1));
 		const jumpOptions = {
+			duration: 450,
 			callback: () => (this.isJumping = false),
 		};
 
@@ -82,12 +87,3 @@ class Controller {
 		jump(selectedView.el, jumpOptions);
 	}
 }
-
-const controller = new Controller();
-
-export const navigateTo = (path, animate = false) => {
-	window.history.replaceState(null, document.title, path);
-	controller.setCurrentView(path, animate);
-};
-
-export default controller;
