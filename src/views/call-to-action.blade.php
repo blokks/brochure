@@ -1,9 +1,16 @@
 <section id='contact' class='call-to-action' data-view>
     <div class='call-to-action__content'>
-        <h1 class='call-to-action__title'>Want to give it a try?</h1>
+        <h1 class='call-to-action__title'>
+            @lang('brochure.call_to_action.title')
+        </h1>
 
-        <p class='call-to-action__description'>Create your first schedule to start playing with Blokks:</p>
-        <a href='' class='call-to-action__action-button'>Lets' go!</a>
+        <h2 class='call-to-action__subtitle'>
+            @lang('brochure.call_to_action.subtitle')
+        </h2>
+
+        <a href='{{ route('signup') }}' class='call-to-action__action-button'>
+            @lang('brochure.call_to_action.signup')
+        </a>
     </div>
 
     <div class='call-to-action__animation'>

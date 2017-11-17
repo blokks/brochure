@@ -4,10 +4,17 @@
             <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#colored-logo') }}'></use>
         </svg>
 
-        <h1 class='header__title'>Beautiful timetables done right</h1>
-        <h2 class='header__subtitle'>Manage and embed your conferenc & festival timetable with ease.</h2>
+        <h1 class='header__title'>
+            @lang('brochure.header.title')
+        </h1>
 
-        <a href='/how-it-works' class='header__continue-link' data-link>Here's how it works</a>
+        <h2 class='header__subtitle'>
+            @lang('brochure.header.subtitle')
+        </h2>
+
+        <a href='/how-it-works' class='header__continue-link' data-link>
+            @lang('brochure.header.how_it_works')
+        </a>
     </div>
 
     <div class='header__animation'>

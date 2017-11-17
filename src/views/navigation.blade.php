@@ -6,14 +6,14 @@
     </a>
 
     <ol class='navigation__links'>
-        <li><a href='/how-it-works' class='navigation__link' data-link>How it works</a></li>
-        <li><a href='/showcase' class='navigation__link' data-link>Showcase</a></li>
-        <li><a href='/pricing' class='navigation__link' data-link>Pricing</a></li>
-        <li><a href='/contact' class='navigation__link' data-link>Contact</a></li>
+        <li><a href='/how-it-works' class='navigation__link' data-link>@lang('brochure.navigation.how_it_works')</a></li>
+        <li><a href='/showcase' class='navigation__link' data-link>@lang('brochure.navigation.showcase')</a></li>
+        <li><a href='/pricing' class='navigation__link' data-link>@lang('brochure.navigation.pricing')</a></li>
+        <li><a href='/contact' class='navigation__link' data-link>@lang('brochure.navigation.contact')</a></li>
     </ol>
 
     <div class='navigation__account'>
-        <a href='{{ route("login") }}' class='navigation__link navigation__link--signin'>Sign in</a>
-        <a href='{{ route("signup") }}' class='navigation__link navigation__link--try'>Try Blokks</a>
+        <a href='{{ route("login") }}' class='navigation__link navigation__link--signin'>@lang('brochure.navigation.signin')</a>
+        <a href='{{ route("signup") }}' class='navigation__link navigation__link--try'>@lang('brochure.navigation.signup')</a>
     </div>
 </nav>

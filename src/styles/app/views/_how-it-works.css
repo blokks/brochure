@@ -44,15 +44,15 @@
         margin-top: 15px;
     }
 
-    &--add-your-lineup &__subtitle {
+    &--manage &__subtitle {
         color: var(--blue-color);
     }
 
-    &--embed-your-timetable &__subtitle {
+    &--embed &__subtitle {
         color: var(--pink-color);
     }
 
-    &--built-for-developers &__subtitle {
+    &--developers &__subtitle {
         color: var(--green-color);
     }
 

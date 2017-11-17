@@ -19,6 +19,7 @@ body {
 
 main {
     min-width: 320px;
+    overflow: hidden;
 }
 
 *, *:after, *:before {

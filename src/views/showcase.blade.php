@@ -1,8 +1,13 @@
 <section id='showcase' class='showcase' data-view>
     <div class='showcase__content'>
         <header class='showcase__header'>
-            <h1 class='showcase__title'>Built with Blokks</h1>
-            <h2 class='showcase__subtitle'>Examples from our clients</h2>
+            <h1 class='showcase__title'>
+                @lang('brochure.showcase.title')
+            </h1>
+
+            <h2 class='showcase__subtitle'>
+                @lang('brochure.showcase.subtitle')
+            </h2>
         </header>
 
         <div class='showcase__slideshow'>
@@ -15,22 +20,30 @@
         <ul class='showcase__slide-selector'>
             <li>
                 <button class='showcase__slide-button' data-client='tnw'><span>The Next Web Conference</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>Visit website</a>
+                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                    @lang('brochure.showcase.visit_label')
+                </a>
             </li>
 
             <li>
                 <button class='showcase__slide-button showcase__slide-button--selected' data-client='momentum'><span>Momentum 2017</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>Visit website</a>
+                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                    @lang('brochure.showcase.visit_label')
+                </a>
             </li>
 
             <li>
                 <button class='showcase__slide-button' data-client='correspondent'><span>De Correspondent</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>Visit website</a>
+                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                    @lang('brochure.showcase.visit_label')
+                </a>
             </li>
 
             <li>
                 <button class='showcase__slide-button' data-client='brainwash'><span>Brainwash Festival</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>Visit website</a>
+                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                    @lang('brochure.showcase.visit_label')
+                </a>
             </li>
         </ul>
     </div>
