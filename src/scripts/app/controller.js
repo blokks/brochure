@@ -2,9 +2,11 @@ import $ from 'queryselector.js';
 import jump from 'jump.js';
 
 import { navigateTo } from 'app/router';
+
+import AbstractView from './views/abstract.view';
 import HowItWorksView from 'app/views/how-it-works.view';
 import NavigationView from 'app/views/navigation.view';
-import AbstractView from './views/abstract.view';
+import ShowcaseView from 'app/views/showcase.view';
 
 export default class {
 	jumping = false;
@@ -39,22 +41,20 @@ export default class {
 
 		const elements = Array.from($('main > [data-view]'));
 		this.views = elements.map(element => {
-			let view;
-
-			switch (element.id) {
-				case 'how-it-works':
-					view = new HowItWorksView(element);
-					break;
-				default:
-					view = new AbstractView(element);
-					break;
-			}
-
 			if (this.intersectionObserver) {
 				this.intersectionObserver.observe(element);
 			}
 
-			return view;
+			switch (element.id) {
+				case 'how-it-works':
+					return new HowItWorksView(element);
+
+				case 'showcase':
+					return new ShowcaseView(element);
+
+				default:
+					return new AbstractView(element);
+			}
 		});
 	}
 
