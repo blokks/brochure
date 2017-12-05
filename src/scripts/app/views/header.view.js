@@ -28,7 +28,7 @@ export default class extends AbstractView {
 
 	handleScroll = (event) => {
 		const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
-		const transform = 20 - 20 * (currentPosition / (this.viewport * 1.2));
+		const transform = 30 - 30 * (currentPosition / (this.viewport * 1.2));
 
 		this.preview.style.transform = `translate3d(0, ${transform}%, 0)`;
 	}

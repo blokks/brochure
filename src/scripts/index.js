@@ -28,17 +28,29 @@ window.on('load', () => {
 //       src: ['http://blokks.dev/brochure/dist/sound.mp3']
 // });
 
-// sound.play();
+
+// sound.once('load', () => {
+// 	console.log(sound)
+// });
+
+// // sound.play();
+
+
+// const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
 
 // window.on('scroll', event => {
 // 	const currentTimeStamp = event.timeStamp;
 // 	const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
 
 // 	if (lastTimeStamp !== 0) {
-// 		let speed = Math.abs(currentPosition - lastPosition) / (currentTimeStamp - lastTimeStamp);
-// 		let rate = speed * 0.5 + 1;
+// 		let distance = currentPosition - lastPosition;
 
-// 		sound.rate(rate);
+// 		console.log(currentPosition / scrollHeight);
+// 		// / / (currentTimeStamp - lastTimeStamp);
+// 		// console.log(distance);
+// 		// let rate = speed * 0.5 + 1;
+
+// 		// sound.rate(rate);
 // 	}
 
 // 	lastPosition = currentPosition;

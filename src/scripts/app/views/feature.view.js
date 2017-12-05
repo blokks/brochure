@@ -9,7 +9,6 @@ export default class extends AbstractView {
 	activate() {
 		if (!this.activated) {
 			super.activate();
-			console.log('play');
 			this.player.play();
 		}
 	}
@@ -17,7 +16,6 @@ export default class extends AbstractView {
 	deactivate() {
 		if (this.activated) {
 			super.deactivate();
-			console.log('pause');
 			this.player.pause();
 		}
 	}

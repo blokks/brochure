@@ -4,9 +4,9 @@
     align-items: center;
     overflow: hidden;
 
-    &:before,
-    &:after {
-        size: 100% 40px;
+    &:before {
+        display: block;
+        height:  calc(200/1100*100%);
         content: '';
     }
 
@@ -62,11 +62,10 @@
     }
 
     &__preview {
-        display: none;
         position: relative;
         width: 100%;
         max-width: 1100px;
-        transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 30%, 0);
 
         @media (--small), (--default) {
             display: none;
@@ -75,7 +74,7 @@
 
     &__preview:before {
         display: block;
-        padding-top: calc(800/1280*100%);
+        padding-top: calc(772/2200*100%);
         content: '';
     }
 
