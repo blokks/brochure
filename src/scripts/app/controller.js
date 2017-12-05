@@ -40,7 +40,7 @@ export default class {
 				});
 			};
 
-			const props = { root: null, rootMargin: '0px', threshold: [0, 0.5, 1.0] };
+			const props = { root: null, rootMargin: '40px 0px 0px 0px', threshold: [0, 0.5, 1.0] };
 			this.intersectionObserver = new IntersectionObserver(handler, props);
 		}
 	}

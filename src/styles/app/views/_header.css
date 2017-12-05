@@ -4,7 +4,8 @@
     align-items: center;
     overflow: hidden;
 
-    &:before {
+    &:before,
+    &:after {
         size: 100% 40px;
         content: '';
     }
@@ -60,30 +61,27 @@
         margin-top: 15px;
     }
 
-    &__screenshot {
+    &__preview {
+        display: none;
         position: relative;
         width: 100%;
         max-width: 1100px;
+        transform: translate3d(0, 20%, 0);
 
         @media (--small), (--default) {
             display: none;
         }
-
-        @media (--wide), (--widest) {
-            display: block;
-        }
     }
 
-    &__screenshot:before {
+    &__preview:before {
         display: block;
-        padding-top: 27.95%;
+        padding-top: calc(800/1280*100%);
         content: '';
     }
 
-    &__screenshot > img {
+    &__preview > video {
         position: absolute 0 * * 0;
         size: 100%;
-
     }
 
     &__animation {

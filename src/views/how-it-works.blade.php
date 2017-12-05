@@ -63,7 +63,7 @@
 
             <div class='feature__media'>
                 <div class='feature__video-wrapper'>
-                    <video id='embedYourTimetableVideo' src='{{ url('/brochure/dist/videos/brochure-embed-your-timetable.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
+                    <video id='embedYourTimetableVideo' src='{{ url('/brochure/dist/videos/blokks-feature-B.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
 
             <div class='feature__media'>
                 <div class='feature__video-wrapper'>
-                    <video id='builtForDevelopersVideo' reload='none' loop muted playsinline class='feature__player'></video>
+                    <video id='builtForDevelopersVideo' src='{{ url('/brochure/dist/videos/blokks-feature-C.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
                 </div>
             </div>
         </div>

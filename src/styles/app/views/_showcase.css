@@ -1,6 +1,10 @@
 .showcase {
     background-color: var(--light-background-color);
 
+    @media (--small) {
+        display: none;
+    }
+        
     @media (--small), (--default), (--wide) {
         padding: calc(150/1100*100%) calc(50/1100*100%);
     }
@@ -41,10 +45,6 @@
         position: relative;
         width: 100%;
         margin: 60px 0 0 0;
-
-        @media (--small) {
-            display: none;
-        }
     }
 
     &__slideshow:before {
@@ -132,18 +132,20 @@
         background-position: center -200%;
     }
 
-    @media (--small), (--default) {
-        &__slide-selector > li:nth-child(even) &__slide-button {
+    &__slide-selector > li:nth-child(even) &__slide-button {
+        @media (--small), (--default) {
             margin-left: -1px;
         }
+    }
 
-        &__slide-selector > li:not(:nth-of-type(-n+2)) &__slide-button {
+    &__slide-selector > li:not(:nth-of-type(-n+2)) &__slide-button {
+        @media (--small), (--default) {
             margin-top: -1px;
         }
     }
 
-    @media (--wide), (--widest) {
-        &__slide-selector > li:not(:first-of-type) {
+    &__slide-selector > li:not(:first-of-type) {
+        @media (--wide), (--widest) {
             margin-left: -1px;
         }        
     }

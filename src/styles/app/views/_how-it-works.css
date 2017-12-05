@@ -14,11 +14,11 @@
         color: var(--light-text-color);
 
         @media (--small), (--default), (--wide) {
-            padding: calc(170/1100*100%) 0 0;
+            padding: calc(150/1100*100%) 0 0;
         }
 
         @media (--widest) {
-            padding: 170px 0 0;
+            padding: 150px 0 0;
         }        
     }
 
