@@ -108,7 +108,7 @@
 
     &__video-wrapper:before {
         display: block;
-        padding-top: calc(1412/1960*100%);
+        padding-top: calc(800/1280*100%);
         background: #34353a;
         content: '';
     }

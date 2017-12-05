@@ -33,7 +33,7 @@
 
             <div class='feature__media'>
                 <div class='feature__video-wrapper'>
-                    <video id='addYourLineupVideo' src='{{ url('/brochure/dist/videos/brochure-add-your-lineup.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
+                    <video id='addYourLineupVideo' src='{{ url('/brochure/dist/videos/blokks-feature-A.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
                 </div>
             </div>
         </div>

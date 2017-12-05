@@ -4,8 +4,8 @@ import jump from 'jump.js';
 import { navigateTo } from 'app/router';
 
 import AbstractView from './views/abstract.view';
+import FeatureView from 'app/views/feature.view';
 import HeaderView from 'app/views/header.view';
-import HowItWorksView from 'app/views/how-it-works.view';
 import NavigationView from 'app/views/navigation.view';
 import ShowcaseView from 'app/views/showcase.view';
 
@@ -68,8 +68,8 @@ export default class {
 				case 'header':
 					return new HeaderView(element);
 
-				case 'how-it-works':
-					return new HowItWorksView(element);
+				case 'feature':
+					return new FeatureView(element);
 
 				case 'showcase':
 					return new ShowcaseView(element);
