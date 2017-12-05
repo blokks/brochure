@@ -3,6 +3,7 @@
 @import 'views/how-it-works';
 @import 'views/showcase';
 @import 'views/pricing';
+@import 'views/poster';
 @import 'views/call-to-action';
 @import 'views/footer';
 
@@ -28,4 +29,10 @@ main.loading {
 
 *, *:after, *:before {
     box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--light-background-color);
+    color: var(--lightest-text-color);
+    text-shadow: none;
 }

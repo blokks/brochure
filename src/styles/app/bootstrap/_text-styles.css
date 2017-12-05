@@ -52,6 +52,12 @@
     }
 }
 
+@define-mixin poster-title {
+    @mixin blokks-mono 15px/1.6;
+    color: var(--lightest-text-color);
+    text-decoration: none;
+}
+
 @define-mixin navitem {
     @mixin blokks-mono 13px;
     color: var(--light-text-color);

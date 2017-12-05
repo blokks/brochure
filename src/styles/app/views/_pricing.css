@@ -56,11 +56,20 @@
 }
 
 .price-option {
-    border: 1px solid #ABB1BC;
-    flex: 1;
+    box-shadow: inset 0px 0px 0px 1px #9BA1AB;
 
-    &--upgrade {
-        margin-left: -1px;
+    @media (--small), (--default) {
+        &--upgrade {
+            margin-top: -1px;
+        }                
+    }
+
+    @media (--wide), (--widest) {
+        width: 50%;
+        
+        &--upgrade {
+            margin-left: -1px;
+        }        
     }
 
     &__header {

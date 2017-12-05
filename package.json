@@ -98,9 +98,14 @@
   },
   "dependencies": {
     "addlistener.js": "^1.0.8",
+    "detect-it": "^3.0.3",
     "director": "^1.2.8",
+    "howler": "^2.0.5",
     "jump.js": "^1.0.2",
+    "lazysizes": "^4.0.1",
     "lodash.debounce": "^4.0.8",
-    "queryselector.js": "^1.0.3"
+    "picturefill": "^3.0.2",
+    "queryselector.js": "^1.0.3",
+    "svg4everybody": "^2.1.9"
   }
 }

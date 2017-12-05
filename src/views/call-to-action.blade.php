@@ -1,4 +1,4 @@
-<section id='contact' class='call-to-action' data-view>
+<section class='call-to-action' data-view='contact' data-path='/contact'>
     <div class='call-to-action__content'>
         <h1 class='call-to-action__title'>
             @lang('brochure.call_to_action.title')

@@ -98,14 +98,14 @@
         width: 100%;
 
         background-color: var(--light-background-color);
-        background-repeat: no-repeat, repeat;
+        background-repeat: repeat;
         background-position: center;
 
-        border: 1px solid #8A8F98;
+        border: none;
         border-radius: 0;
+        box-shadow: inset 0px 0px 0px 1px #8A8F98;
         outline: none;
         cursor: pointer;
-
     }
 
     &__slide-button:before {
@@ -119,35 +119,54 @@
         margin: auto;
         background-size: 100%;
     }
-
-    &__slide-selector > li:not(:first-of-type) &__slide-button {
-        border-left: 0;
-    }
-
+    
     &__slide-button:not(&__slide-button--selected):hover span {
         background-position: center -100%;
     }
 
     &__slide-button--selected {
-        border: none;
+        box-shadow: none;
     }
 
     &__slide-button--selected span {
         background-position: center -200%;
     }
 
+    @media (--small), (--default) {
+        &__slide-selector > li:nth-child(even) &__slide-button {
+            margin-left: -1px;
+        }
+
+        &__slide-selector > li:not(:nth-of-type(-n+2)) &__slide-button {
+            margin-top: -1px;
+        }
+    }
+
+    @media (--wide), (--widest) {
+        &__slide-selector > li:not(:first-of-type) {
+            margin-left: -1px;
+        }        
+    }
+
     &__website-link {
         @mixin blokks-mono 13px;
-        text-decoration: none;
-        text-align: center;
         color: #44494E;
 
-        position: absolute * * 0 *;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: var(--default-stroke-color);
+        text-align: center;
+
+        position: absolute * * 5px *;
         width: 100%;
         outline: none;
         z-index: -1;
 
         transition: transform 250ms;
+
+        @media (--small), (--default) {
+            display: none;
+        }
     }
 
     &__website-link:hover {
@@ -155,6 +174,6 @@
     }
 
     &__slide-button--selected + &__website-link {
-        transform: translateY(30px);
+        transform: translateY(35px);
     }
 }

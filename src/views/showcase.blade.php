@@ -1,4 +1,4 @@
-<section id='showcase' class='showcase' data-view>
+<section class='showcase' data-view='showcase' data-path='/showcase'>
     <div class='showcase__content'>
         <header class='showcase__header'>
             <h1 class='showcase__title'>
@@ -11,10 +11,10 @@
         </header>
 
         <div class='showcase__slideshow'>
-            <img src='{{ url('brochure/dist/images/example-01.png') }}' width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected'>
-            <img src='{{ url('brochure/dist/images/example-03.png') }}' width='900' height='450' alt='De Correspondent' data-client='correspondent' class='showcase__slide'>
-            <img src='{{ url('brochure/dist/images/example-01.png') }}' width='900' height='450' alt='Brainwash Festival' data-client='brainwash' class='showcase__slide'>
-            <img src='{{ url('brochure/dist/images/example-03.png') }}' width='900' height='450' alt='Momentum 2018' data-client='momentum' class='showcase__slide'>
+            <img data-src='{{ url('brochure/dist/images/example-01.png') }}' width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected lazyload'>
+            <img data-src='{{ url('brochure/dist/images/example-03.png') }}' width='900' height='450' alt='De Correspondent' data-client='correspondent' class='showcase__slide lazyload'>
+            <img data-src='{{ url('brochure/dist/images/example-01.png') }}' width='900' height='450' alt='Brainwash Festival' data-client='brainwash' class='showcase__slide lazyload'>
+            <img data-src='{{ url('brochure/dist/images/example-03.png') }}' width='900' height='450' alt='Momentum 2018' data-client='momentum' class='showcase__slide lazyload'>
         </div>
 
         <ul class='showcase__slide-selector'>

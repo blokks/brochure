@@ -1,4 +1,4 @@
-<header id='header' class='header' data-view>
+<header class='header' data-view='header' data-path='/'>
     <div class='header__content'>
         <svg class='header__logo' viewBox='0 0 360 60'>
             <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#colored-logo') }}'></use>
@@ -11,10 +11,10 @@
         <h2 class='header__subtitle'>
             @lang('brochure.header.subtitle')
         </h2>
+    </div>
 
-        <a href='/how-it-works' class='header__continue-link' data-link>
-            @lang('brochure.header.how_it_works')
-        </a>
+    <div id='screenshot' class='header__screenshot'>
+        <img src='{{ url('/brochure/dist/images/screenshot.jpg') }}'>
     </div>
 
     <div class='header__animation'>

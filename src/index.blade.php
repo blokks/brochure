@@ -8,6 +8,18 @@
     @include('brochure::views/how-it-works')
     @include('brochure::views/showcase')
     @include('brochure::views/pricing')
+
+	@include('brochure::views/poster', [
+		'link' => '',
+		'title' => 'Have a look at what The Correspondent built with Blokks',
+		'preview' => '/brochure/dist/images/poster__corres@160.jpg',
+		'images' => [
+			'/brochure/dist/images/poster__corres@960.jpg',
+			'/brochure/dist/images/poster__corres@1920.jpg',
+			'/brochure/dist/images/poster__corres@2880.jpg'
+		]
+	])
+
     @include('brochure::views/call-to-action')
     @include('brochure::views/footer')
 

@@ -56,28 +56,28 @@
     }
 
     &__animation svg:nth-of-type(1) {
-        position: absolute 15% * * 5%;
-        size: 25% 35%;
-        animation: rotate-square-animation-01 45s linear infinite;
+        position: absolute -60vw * * -60vw;
+        size: 120vw;
+        animation: rotate-square-animation-01 175s linear infinite;
     }
 
     &__animation svg:nth-of-type(2) {
-        position: absolute * * 0% 35%;
-        size: 20% 35%;
-        animation: rotate-square-animation-02 35s linear infinite;
+        position: absolute * -50vh -50vh *;
+        size: 100vh;
+        animation: rotate-square-animation-01 175s linear infinite;
     }
 
     &__animation svg:nth-of-type(3) {
-        position: absolute * 0% 55% *;
-        size: 35% 40%;
-        animation: rotate-square-animation-01 55s linear infinite;
+        position: absolute -75vw -75vw * *;
+        size: 150vw;
+        animation: rotate-square-animation-01 175s linear infinite;
     }
 
     &__animation svg > path {
         fill: none;
-        stroke: color(#fff alpha(0.6));
+        stroke: var(--default-dot-color);
         stroke-width: 2;
-        stroke-dasharray: 1, 15;
+        stroke-dasharray: 1, 20;
         vector-effect: non-scaling-stroke;
     }
 }

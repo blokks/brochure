@@ -43,6 +43,10 @@
         &:nth-child(6) { color: var(--grey-color); }
     }
 
+    &__link--docs {
+        color: var(--blue-color);
+    }
+
     &__legal {
         display: flex;
         flex-direction: row;

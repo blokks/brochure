@@ -9,7 +9,6 @@ export default class AbstractView {
 
 	constructor(el, options = {}) {
 		this.initialize({ el, ...options });
-		this.enable();
 	}
 
 	initialize(options) {
@@ -25,12 +24,22 @@ export default class AbstractView {
 		return !this.enabled;
 	}
 
+	get deactivated() {
+		return !this.activated;
+	}
+
 	activate() {
-		this.activated = true;
+		if (this.deactivated) {
+			this.activated = true;
+			this.enable();
+		}
 	}
 
 	deactivate() {
-		this.activated = false;
+		if (this.activated)  {
+			this.activated = false;
+			this.disable();
+		}		
 	}
 
 	enable() {

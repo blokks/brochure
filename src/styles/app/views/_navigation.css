@@ -77,21 +77,24 @@
     &__link--try {
         padding: 14px 40px 0;
         flex: none;
-        color: var(--lightest-text-color);
 
         @media (--small) {
             text-align: center;
         }
     }
 
+    &__link--try {
+        color: var(--lightest-text-color);        
+    }
+
     &__link--signin {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: var(--default-stroke-color);
+
         @media (--small) {
             display: none;
         }
-    }
-
-    &__link--signin:hover {
-        color: var(--green-color);
     }
 
     &__link--try {

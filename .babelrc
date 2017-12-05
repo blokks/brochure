@@ -11,6 +11,5 @@
 
 	"plugins": [
         "babel-plugin-transform-runtime",
-        "transform-decorators-legacy"
     ]
 }

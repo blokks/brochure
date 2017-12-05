@@ -1,18 +1,36 @@
 .header {
     display: flex;
-    position: relative;
-    min-height: calc(100vh - 40px);
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    &:before {
+        size: 100% 40px;
+        content: '';
+    }
+
+    @media (--small), (--default) {
+        justify-content: center;
+        height: 75vh;
+        min-height: 500px;
+    }
+
+    @media (--wide), (--widest) {
+        justify-content: space-between;        
+        height: 110vh;
+        min-height: 850px;
+    }
 
     @media (--default), (--wide), (--widest) {
-        margin: 40px auto 0;
+        margin: 0 auto;
     }
 
     @media (--small), (--default), (--wide) {
-        padding: calc(150/1100*100%) calc(50/1100*100%);
+        padding: 0 calc(50/1100*100%);
     }
 
     @media (--widest) {
-        padding: 150px 50px;
+        padding: 0 50px;
     }
 
     &__content {
@@ -20,7 +38,7 @@
         flex-direction: column;
         align-items: center;
 
-        margin: auto;
+        width: 100%;
         max-width: 1100px;
     }
 
@@ -42,19 +60,37 @@
         margin-top: 15px;
     }
 
-    &__continue-link {
-        @mixin blokks-mono 1.5rem;
-        color: var(--green-color);
-        text-decoration: none;
+    &__screenshot {
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
 
-        margin-top: 30px;
-        border-bottom: 1px solid;
+        @media (--small), (--default) {
+            display: none;
+        }
+
+        @media (--wide), (--widest) {
+            display: block;
+        }
+    }
+
+    &__screenshot:before {
+        display: block;
+        padding-top: 27.95%;
+        content: '';
+    }
+
+    &__screenshot > img {
+        position: absolute 0 * * 0;
+        size: 100%;
+
     }
 
     &__animation {
         position: absolute 0 * * 0;
         size: 100%;
         z-index: -1;
+        transform:  translateZ(0);
 
         @media (--small), (--default) {
             display: none;
@@ -64,38 +100,38 @@
     &__animation svg:nth-of-type(1) {
         position: absolute 35% 70% * *;
         size: 20% 30%;
-        animation: scale-square-animation-01 27s infinite;
+        animation: scale-square-animation-01 20s infinite;
     }
 
     &__animation svg:nth-of-type(2) {
         position: absolute 5% * * 20%;
         size: 30% 25%;
-        animation: scale-square-animation-02 24s infinite;
+        animation: scale-square-animation-02 18s infinite;
     }
 
     &__animation svg:nth-of-type(3) {
         position: absolute * 45% -5% *;
         size: 20% 40%;
-        animation: scale-square-animation-03 20s infinite;
+        animation: scale-square-animation-03 21s infinite;
     }
 
     &__animation svg:nth-of-type(4) {
         position: absolute 15% * * 55%;
         size: 20% 40%;
-        animation: scale-square-animation-04 17s infinite;
+        animation: scale-square-animation-04 15s infinite;
     }
 
     &__animation svg:nth-of-type(5) {
         position: absolute * 10% 15% *;
         size: 15% 20%;
-        animation: scale-square-animation-05 22s infinite;
+        animation: scale-square-animation-05 17s infinite;
     }
 
     &__animation svg > path {
         fill: none;
-        stroke: color(#fff alpha(0.6));
+        stroke: var(--default-dot-color);
         stroke-width: 2;
-        stroke-dasharray: 1, 15;
+        stroke-dasharray: 1, 20;
         vector-effect: non-scaling-stroke;
     }
 }
