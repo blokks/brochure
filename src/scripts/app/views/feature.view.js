@@ -15,9 +15,9 @@ export default class extends AbstractView {
 	}
 
 	addAnimation() {
-		const animation = this.el.getAttribute('data-animation');
+		const animationType = this.el.getAttribute('data-animation');
 
-		switch(animation) {
+		switch(animationType) {
 			case 'featureA':
 		        this.animation = new SVGAnim(featureA, 640, 400, 31);
 				break;
@@ -35,6 +35,20 @@ export default class extends AbstractView {
         this.animation.s.node.removeAttribute('width');
         this.animation.s.node.removeAttribute('height');
         this.container.appendChild(this.animation.s.node);
+	}
+
+	activate() {
+		if (this.deactivated) {
+			super.activate();
+			this.animation.mc.play()
+		}
+	}
+
+	deactivate() {
+		if (this.activated) {
+			super.deactivate();
+			this.animation.mc.stop()
+		}
 	}
 
 	enable() {
