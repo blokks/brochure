@@ -9,7 +9,7 @@
         </svg>        
     </header>
 
-    <section class='how-it-works__feature feature feature--manage' data-view='feature' data-path='/how-it-works'>
+    <section class='how-it-works__feature feature feature--manage' data-view='feature' data-path='/how-it-works' data-animation='featureA'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
@@ -32,14 +32,12 @@
             </div>
 
             <div class='feature__media'>
-                <div class='feature__video-wrapper'>
-                    <video id='addYourLineupVideo' src='{{ url('/brochure/dist/videos/blokks-feature-A.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
-                </div>
+                <div id='animationContainer' class='feature__animation-container'></div>
             </div>
         </div>
     </section>
 
-    <section class='how-it-works__feature feature feature--embed' data-view='feature' data-path='/how-it-works'>
+    <section class='how-it-works__feature feature feature--embed' data-view='feature' data-path='/how-it-works' data-animation='featureB'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
@@ -62,14 +60,12 @@
             </div>
 
             <div class='feature__media'>
-                <div class='feature__video-wrapper'>
-                    <video id='embedYourTimetableVideo' src='{{ url('/brochure/dist/videos/blokks-feature-B.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
-                </div>
+                <div id='animationContainer' class='feature__animation-container'></div>
             </div>
         </div>
     </section>
 
-    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works'>
+    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works' data-animation='featureC'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
@@ -93,9 +89,7 @@
             </div>
 
             <div class='feature__media'>
-                <div class='feature__video-wrapper'>
-                    <video id='builtForDevelopersVideo' src='{{ url('/brochure/dist/videos/blokks-feature-C.mp4') }}' reload='none' loop muted playsinline class='feature__player'></video>
-                </div>
+                <div id='animationContainer' class='feature__animation-container'></div>
             </div>
         </div>
     </section>

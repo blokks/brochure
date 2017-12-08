@@ -30,6 +30,7 @@
         @media (--wide), (--widest) {
             flex-direction: row;
             justify-content: center;
+            align-items: flex-start;
         }
     }
 
@@ -43,11 +44,11 @@
         @mixin title;
 
         @media (--small), (--default) {
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         @media (--wide), (--widest) {
-            margin-top: 10px;
+            margin-top: 0px;
         }
     }
 
@@ -110,14 +111,16 @@
         }
     }
 
-    &__video-wrapper:before {
+    &__animation-container:before {
         display: block;
         padding-top: calc(800/1280*100%);
         content: '';
     }
 
-    &__player {
+    &__animation-container svg {
         position: absolute 0 * * 0;
-        width: 100%;
+        size: 100%;
+        margin:  0;
+        overflow: hidden;
     }
 }

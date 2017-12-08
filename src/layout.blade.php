@@ -21,6 +21,7 @@
 
         </main>
 
+        <script src='{{ url('/brochure/dist/scripts/vendor/SnapSVGAnimator.js') }}'></script>
         <script src='{{ url('/brochure/dist/scripts/index.js') }}'></script>
     </body>
 </html>

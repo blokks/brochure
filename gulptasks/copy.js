@@ -16,6 +16,7 @@ gulp.task('copy', () => {
         '!src/scripts/index.js',
         '!src/scripts/app/**/*',
         '!src/styles/**/*',
+        'src/scripts/vendor/**/*'
     ];
 
     const destination = 'dist';

@@ -1,5 +1,3 @@
-@import 'feature';
-
 .how-it-works {
     @media (--wide), (--widest) {
         border-top: 1px solid var(--default-stroke-color);
@@ -28,3 +26,5 @@
         fill:  currentcolor;
     }
 }
+
+@import 'feature';

@@ -65,7 +65,7 @@
         position: relative;
         width: 100%;
         max-width: 1100px;
-        transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 20%, 0);
 
         @media (--small), (--default) {
             display: none;
