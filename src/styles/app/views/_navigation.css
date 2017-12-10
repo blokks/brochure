@@ -69,6 +69,10 @@
         height: 40px;
     }
 
+    &__link--docs {
+        color: var(--blue-color);
+    }
+    
     &__link--active {
         color: var(--lightest-text-color);
     }
