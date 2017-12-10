@@ -40,6 +40,62 @@
     100% { transform: rotate(-360deg); }
 }
 
+@keyframes header-logo-animation-01 {
+    from, to { fill: var(--blue-color); }
+    17% { fill: var(--pink-color); }
+    34% { fill: var(--yellow-color); }
+    51% { fill: var(--green-color); }
+    68% { fill: var(--purple-color); }
+    85% { fill: var(--grey-color); }
+}
+
+@keyframes header-logo-animation-02 {
+    from, to { fill: var(--pink-color); }
+    17% { fill: var(--yellow-color); }
+    34% { fill: var(--green-color); }
+    51% { fill: var(--purple-color); }
+    68% { fill: var(--grey-color); }
+    85% { fill: var(--blue-color); }
+}
+
+@keyframes header-logo-animation-03 {
+    from, to { fill: var(--yellow-color); }
+    17% { fill: var(--green-color); }
+    34% { fill: var(--purple-color); }
+    51% { fill: var(--grey-color); }
+    68% { fill: var(--blue-color); }
+    85% { fill: var(--pink-color); }
+}
+
+@keyframes header-logo-animation-04 {
+  from,
+    to { fill: var(--green-color); }
+    17% { fill: var(--purple-color); }
+    34% { fill: var(--grey-color); }
+    51% { fill: var(--blue-color); }
+    68% { fill: var(--pink-color); }
+    85% { fill: var(--yellow-color); }
+}
+
+@keyframes header-logo-animation-05 {
+    from, to { fill: var(--purple-color); }
+    17% { fill: var(--grey-color); }
+    34% { fill: var(--blue-color); }
+    51% { fill: var(--pink-color); }
+    68% { fill: var(--yellow-color); }
+    85% { fill: var(--green-color); }
+}
+
+@keyframes header-logo-animation-06 {
+    from, to { fill: var(--grey-color); }
+    17% { fill: var(--blue-color); }
+    34% { fill: var(--pink-color); }
+    51% { fill: var(--yellow-color); }
+    68% { fill: var(--green-color); }
+    85% { fill: var(--purple-color); }
+}
+
+
 @keyframes footer-logo-animation-01 {
     from, to { color: var(--blue-color); }
     17% { color: var(--pink-color); }
