@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    padding: 14px 15px;
+    padding: 0 15px 20px;
 
     @media (--small), (--default) {
         flex-direction: column;
@@ -16,6 +16,10 @@
     &__links {
         display: flex;
         flex-direction: row;
+
+        @media (--small), (--default) {
+            margin-top: 15px;
+        }
     }
 
     &__links > li {
@@ -101,7 +105,7 @@
         flex-direction: row;
 
         @media (--small), (--default) {
-            margin-top: 10px;
+            margin-top: 15px;
         }
     }
 

@@ -3,18 +3,18 @@
     justify-content: center;
     align-items: center;
 
-    @media (--small), (--default) {
-        padding: calc(150/1100*100%) calc(50/1100*100%);
-        &:not(:first-of-type) { padding-top: 0; }
-    }
-
-    @media (--wide), (--widest) {
-        padding: 150px 50px;
-    }
-
-    @media (--wide), (--widest) {
         background: linear-gradient(to right, var(--default-dot-color) 5%, transparent 0%) bottom repeat-x;
         background-size: 19px 1px;
+
+    @media (--small), (--default) {
+        padding: calc(200/1100*100%) calc(50/1100*100%);
+    }
+
+    @media (--wide), (--widest) {
+        padding: 200px 50px;
+    }
+
+    @media (--wide), (--widest) {
     }
 
     &__content {

@@ -4,20 +4,22 @@
     }
 
     &__header {
+        @media (--small), (--default), (--wide) {
+            padding: calc(200/1100*100%) 0 0;
+        }
+
+        @media (--widest) {
+            padding: 200px 0 0;
+        }        
+    }
+
+    &__shortcut {
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @mixin subtitle;
         color: var(--light-text-color);
-
-        @media (--small), (--default), (--wide) {
-            padding: calc(150/1100*100%) 0 0;
-        }
-
-        @media (--widest) {
-            padding: 150px 0 0;
-        }        
     }
 
     svg {

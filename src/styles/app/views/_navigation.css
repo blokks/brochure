@@ -79,7 +79,6 @@
 
     &__link--signin,
     &__link--try {
-        padding: 14px 40px 0;
         flex: none;
 
         @media (--small) {
@@ -92,6 +91,8 @@
     }
 
     &__link--signin {
+        padding: 14px 25px 0;
+        
         text-decoration: underline;
         text-underline-position: under;
         text-decoration-color: var(--default-stroke-color);
@@ -105,9 +106,14 @@
         background-color: var(--blue-color);
 
         @media (--small) {
-            width: 100%;
+            size: 100% 50px;
+            padding: 18px 40px 0;
         }
-    }
+
+        @media (--default), (--wide), (--widest) {
+            padding: 14px 40px 0;
+        }
+   }
 
     &__link--try:hover {
         background-color: var(--green-color);

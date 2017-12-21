@@ -10,8 +10,8 @@
     @include('brochure::views/pricing')
 
 	@include('brochure::views/poster', [
-		'link' => '',
-		'title' => 'Have a look at what The Correspondent built with Blokks',
+		'link' => 'http://www.audriuskriauciunas.com/',
+		'credits' => 'Photo by Audrius Kriaučiūnas',
 		'preview' => '/brochure/dist/images/poster__corres@160.jpg',
 		'images' => [
 			'/brochure/dist/images/poster__corres@960.jpg',

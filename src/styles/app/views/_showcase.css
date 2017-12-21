@@ -6,11 +6,11 @@
     }
         
     @media (--small), (--default), (--wide) {
-        padding: calc(150/1100*100%) calc(50/1100*100%);
+        padding: calc(200/1100*100%) calc(50/1100*100%);
     }
 
     @media (--widest) {
-        padding: 150px 50px;
+        padding: 200px 50px;
     }
 
     &__content {

@@ -11,22 +11,15 @@
         </header>
 
         <div class='showcase__slideshow'>
-            <img data-src='{{ url('brochure/dist/images/example-01.png') }}' width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected lazyload'>
-            <img data-src='{{ url('brochure/dist/images/example-03.png') }}' width='900' height='450' alt='De Correspondent' data-client='correspondent' class='showcase__slide lazyload'>
-            <img data-src='{{ url('brochure/dist/images/example-01.png') }}' width='900' height='450' alt='Brainwash Festival' data-client='brainwash' class='showcase__slide lazyload'>
-            <img data-src='{{ url('brochure/dist/images/example-03.png') }}' width='900' height='450' alt='Momentum 2018' data-client='momentum' class='showcase__slide lazyload'>
+            <img data-src='{{ url('brochure/dist/images/showcase__tnw--visual.jpg') }}' width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected lazyload'>
+            <img data-src='{{ url('brochure/dist/images/showcase__correspondent--visual.jpg') }}' width='900' height='450' alt='De Correspondent' data-client='correspondent' class='showcase__slide lazyload'>
+            <img data-src='{{ url('brochure/dist/images/showcase__momentum--visual.jpg') }}' width='900' height='450' alt='Momentum' data-client='momentum' class='showcase__slide lazyload'>
+            <img data-src='{{ url('brochure/dist/images/showcase__itw--visual.jpg') }}' width='900' height='450' alt='Into the Woods' data-client='itw' class='showcase__slide lazyload'>
         </div>
 
         <ul class='showcase__slide-selector'>
             <li>
                 <button class='showcase__slide-button showcase__slide-button--selected' data-client='tnw'><span>The Next Web Conference</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>
-                    @lang('brochure.showcase.visit_label')
-                </a>
-            </li>
-
-            <li>
-                <button class='showcase__slide-button' data-client='momentum'><span>Momentum 2017</span></button>
                 <a href='#' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
@@ -40,7 +33,14 @@
             </li>
 
             <li>
-                <button class='showcase__slide-button' data-client='brainwash'><span>Brainwash Festival</span></button>
+                <button class='showcase__slide-button' data-client='momentum'><span>Momentum</span></button>
+                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                    @lang('brochure.showcase.visit_label')
+                </a>
+            </li>
+
+            <li>
+                <button class='showcase__slide-button' data-client='itw'><span>Into The Woods Festival</span></button>
                 <a href='#' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
@@ -74,13 +74,13 @@
         }
 
         /* Brainwash */
-        .showcase__slide-button--selected[data-client='brainwash'] {
-            background-image: url('{{ url('brochure/dist/images/showcase__brainwash--background.png') }}');
+        .showcase__slide-button--selected[data-client='itw'] {
+            background-image: url('{{ url('brochure/dist/images/showcase__itw--background.png') }}');
             background-size: cover;
         }
 
-        .showcase__slide-button[data-client='brainwash'] span {
-            background-image: url('{{ url('brochure/dist/images/showcase__brainwash--logo.png') }}');
+        .showcase__slide-button[data-client='itw'] span {
+            background-image: url('{{ url('brochure/dist/images/showcase__itw--logo.png') }}');
             width: 135px; height: 37px;
         }
 

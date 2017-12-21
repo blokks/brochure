@@ -1,12 +1,14 @@
 <section class='how-it-works' data-view='how-it-works' data-path='/how-it-works'>
     <header class='how-it-works__header'>
-        <h1 class='how-it-works__title'>
-            @lang('brochure.how_it_works.title')
-        </h1>
+        <a href='/how-it-works' data-link class='how-it-works__shortcut'>
+            <h1 class='how-it-works__title'>
+                @lang('brochure.how_it_works.title')
+            </h1>
 
-        <svg>
-            <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#arrow-down') }}'></use>
-        </svg>        
+            <svg>
+                <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#arrow-down') }}'></use>
+            </svg>        
+        </a>
     </header>
 
     <section class='how-it-works__feature feature feature--manage' data-view='feature' data-path='/how-it-works' data-animation='featureA'>

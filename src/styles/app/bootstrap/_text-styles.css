@@ -4,11 +4,11 @@
     color: var(--lightest-text-color);
 
     @media (--small) {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     @media (--default), (--wide) {
-        font-size: responsive 26px 34px;
+        font-size: responsive 30px 34px;
         font-range: 480px 1100px;
     }
 
@@ -20,6 +20,7 @@
 @define-mixin subtitle {
     @mixin blokks-mono 15px/1.4;
     color: inherit;
+    text-decoration: none;
 }
 
 @define-mixin bodytext {
@@ -28,11 +29,11 @@
     color: inherit;
 
     @media (--small) {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     @media (--default), (--wide) {
-        font-size: responsive 15px 18px;
+        font-size: responsive 16px 18px;
         font-range: 480px 1000px;
     }
 
@@ -52,9 +53,9 @@
     }
 }
 
-@define-mixin poster-title {
-    @mixin blokks-mono 15px/1.6;
-    color: var(--lightest-text-color);
+@define-mixin poster-credits {
+    @mixin blokks-mono 13px/1.6;
+    color: var(--darkest-text-color);
     text-decoration: none;
 }
 
