@@ -6,7 +6,7 @@
             </h1>
 
             <svg>
-                <use xlink:href='{{ blokks_url('/brochure/dist/images/spritesheet.svg#arrow-down') }}'></use>
+                <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#arrow-down') }}'></use>
             </svg>        
         </a>
     </header>
