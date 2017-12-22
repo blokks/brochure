@@ -1,6 +1,7 @@
 .poster {
 	position: relative;
 	overflow: hidden;
+        background-color: black;
     z-index: 1;
 
     @media (--small) {
@@ -25,14 +26,11 @@
         position: absolute 0 * * 0;
         size: 100%;
         z-index: -1;
-    	transition: 
-            filter 600ms, 
-            opacity 600ms;
+    	transition: opacity 600ms;
     }
 
     &__image:not(.lazyloaded) {
-    	opacity: 0.8;
-    	filter: blur(4px);
+        opacity: 0;
     }
 
     &__credits {

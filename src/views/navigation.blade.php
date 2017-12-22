@@ -1,7 +1,7 @@
 <nav id='navigation' class='navigation'>
     <a href='/' data-link>
         <svg class='navigation__logo'>
-            <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#logo') }}'></use>
+            <use xlink:href='{{ blokks_url('/brochure/dist/images/spritesheet.svg#logo') }}'></use>
         </svg>
     </a>
 
