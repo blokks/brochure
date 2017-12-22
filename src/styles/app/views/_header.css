@@ -6,7 +6,8 @@
 
     &:before {
         display: block;
-        height:  calc(200/1100*100%);
+        width: 100%;
+        height: calc(250/1100*100%);
         content: '';
     }
 

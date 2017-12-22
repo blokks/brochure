@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    padding: 0 15px 20px;
+    padding: 0 20px 15px;
 
     @media (--small), (--default) {
         flex-direction: column;
@@ -10,7 +10,6 @@
     @media (--wide), (--widest) {
         flex-direction: row;
         justify-content: space-between;
-        height: 40px;
     }
 
     &__links {

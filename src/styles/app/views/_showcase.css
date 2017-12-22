@@ -60,6 +60,10 @@
         transition: opacity 600ms;
     }
 
+    &__slide:not(.lazyloaded) {
+        opacity: 0;
+    }
+
     &__slide:not(&__slide--selected) {
         z-index: -1;
     }

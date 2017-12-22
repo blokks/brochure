@@ -27,15 +27,20 @@
         <meta itemprop='inLanguage' content='en-US'>
 
         <!-- OpenGraph -->
-        <meta property='og:type' content='website'>
         <meta property='og:title' content='Blokks'>
         <meta property='og:description' content='@lang('brochure.social.description')'>
-        <meta property='og:url' content='{{ blokks_url() }}'>
         <meta property='og:image' content='{{ blokks_url("/brochure/dist/images/og.png") }}'/>
+        <meta property='og:type' content='website'>
+        <meta property='og:url' content='{{ blokks_url() }}'>
+        <meta property='og:site_name' content='Blokks' />
+        <meta property='og:locale' content='en_US' />
 
         <!-- Twitter Card -->
-        <meta name='twitter:card' content='summary'>
+        <meta name='twitter:title' content='Blokks' />
+        <meta name='twitter:description' content='@lang('brochure.social.description')' />
+        <meta name='twitter:card' content='summary_large_image'>
         <meta name='twitter:site' content='@BlokksHQ'>
+        <meta name='twitter:image:src' content='{{ blokks_url("/brochure/dist/images/og.png") }}' />
 
         @stack('styles')
     </head>
