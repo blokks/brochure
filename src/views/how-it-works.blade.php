@@ -95,4 +95,33 @@
             </div>
         </div>
     </section>
+
+    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works' data-animation='featureC'>
+        <div class='feature__content'>
+            <div class='feature__info'>
+                <h1 class='feature__title'>
+                    @lang('brochure.how_it_works.visitors.title')
+                </h1>
+
+                <h2 class='feature__subtitle'>
+                    @lang('brochure.how_it_works.visitors.subtitle')
+                </h2>
+
+                <p class='feature__description'>
+                    @lang('brochure.how_it_works.visitors.description')
+                </p>
+
+                <ol class='feature__features'>
+                    <li>@lang('brochure.how_it_works.visitors.features.dashboard')</li>
+                    <li>@lang('brochure.how_it_works.visitors.features.favorites')</li>
+                    <li>@lang('brochure.how_it_works.visitors.features.friends')</li>
+                    <li>@lang('brochure.how_it_works.visitors.features.offline')</li>
+                </ol>
+            </div>
+
+            <div class='feature__media'>
+                <div id='animationContainer' class='feature__animation-container'></div>
+            </div>
+        </div>
+    </section>
 </section>
