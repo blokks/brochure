@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
 
+    position: fixed 0 * * *;
     size: 100% 40px;
     min-width: 320px;
     backface-visibility: hidden;
@@ -16,8 +17,8 @@
         backdrop-filter: blur(4px)
     }
 
-    @media (--default), (--wide), (--widest) {
-        position: fixed 0 * * *;
+    @media (--small) {
+        display: none;
     }
 
     &__logo {
@@ -52,11 +53,11 @@
     &__account {
         display: flex;
         flex-direction: row;
-
+/* 
         @media (--small) {
             width: 100%;
         }
-
+ */
         @media (--default), (--wide), (--widest) {
             margin-left: auto;
         }
@@ -80,10 +81,11 @@
     &__link--signin,
     &__link--try {
         flex: none;
-
+/* 
         @media (--small) {
             text-align: center;
         }
+ */
     }
 
     &__link--try {
@@ -96,20 +98,21 @@
         text-decoration: underline;
         text-underline-position: under;
         text-decoration-color: var(--default-stroke-color);
-
+/* 
         @media (--small) {
             display: none;
         }
+ */
     }
 
     &__link--try {
         background-color: var(--blue-color);
-
+/* 
         @media (--small) {
             size: 100% 50px;
             padding: 18px 40px 0;
         }
-
+ */
         @media (--default), (--wide), (--widest) {
             padding: 14px 40px 0;
         }
