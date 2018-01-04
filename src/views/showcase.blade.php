@@ -52,9 +52,11 @@
 @push('styles')
     <style>
         /* The Next Web */
-        .showcase__slide-button--selected[data-client='tnw'] {
-            background-image: url('{{ url('brochure/dist/images/showcase__tnw--background.jpg') }}');
-            background-size: cover;
+        @media (min-width: 30em) {
+            .showcase__slide-button--selected[data-client='tnw'] {
+                background-image: url('{{ url('brochure/dist/images/showcase__tnw--background.jpg') }}');
+                background-size: cover;                
+            }
         }
 
         .showcase__slide-button[data-client='tnw'] span {
@@ -63,9 +65,11 @@
         }
 
         /* Momentum */
-        .showcase__slide-button--selected[data-client='momentum'] {
-            background-image: url('{{ url('brochure/dist/images/showcase__momentum--background.jpg') }}');
-            background-size: cover;
+        @media (min-width: 30em) {
+            .showcase__slide-button--selected[data-client='momentum'] {
+                background-image: url('{{ url('brochure/dist/images/showcase__momentum--background.jpg') }}');
+                background-size: cover;
+            }
         }
 
         .showcase__slide-button[data-client='momentum'] span {
@@ -74,9 +78,11 @@
         }
 
         /* Brainwash */
-        .showcase__slide-button--selected[data-client='itw'] {
-            background-image: url('{{ url('brochure/dist/images/showcase__itw--background.jpg') }}');
-            background-size: cover;
+        @media (min-width: 30em) {
+            .showcase__slide-button--selected[data-client='itw'] {
+                background-image: url('{{ url('brochure/dist/images/showcase__itw--background.jpg') }}');
+                background-size: cover;
+            }
         }
 
         .showcase__slide-button[data-client='itw'] span {
@@ -85,9 +91,11 @@
         }
 
         /* Correspondent */
-        .showcase__slide-button--selected[data-client='correspondent'] {
-            background-image: url('{{ url('brochure/dist/images/showcase__correspondent--background.png') }}');
-            background-size: cover;
+        @media (min-width: 30em) {
+            .showcase__slide-button--selected[data-client='correspondent'] {
+                background-image: url('{{ url('brochure/dist/images/showcase__correspondent--background.png') }}');
+                background-size: cover;
+            }
         }
 
         .showcase__slide-button[data-client='correspondent'] span {

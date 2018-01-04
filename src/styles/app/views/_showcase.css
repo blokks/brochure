@@ -1,10 +1,6 @@
 .showcase {
     background-color: var(--light-background-color);
 
-    @media (--small) {
-        display: none;
-    }
-        
     @media (--small), (--default), (--wide) {
         padding: calc(200/1100*100%) calc(50/1100*100%);
     }
@@ -45,6 +41,10 @@
         position: relative;
         width: 100%;
         margin: 60px 0 0 0;
+
+        @media (--small) {
+            display: none;
+        }        
     }
 
     &__slideshow:before {
@@ -70,12 +70,19 @@
 
     &__slide-selector {
         display: flex;
-        flex-direction: row;
         margin-top: 40px;
         width: 100%;
         max-width: 900px;
 
-        @media (--small), (--default) {
+        @media (--small) {
+            flex-direction: column;
+        }
+        
+        @media (--default), (--wide), (--widest) {
+            flex-direction: row;
+        }
+
+        @media (--default) {
             flex-wrap: wrap;
         }
 
@@ -89,7 +96,11 @@
         position: relative;
         z-index: 1;
 
-        @media (--small), (--default) {
+        @media (--small) {
+            width: 100%;
+        }
+
+        @media (--default) {
             width: 50%;
         }
 
@@ -109,15 +120,29 @@
 
         border: none;
         border-radius: 0;
-        box-shadow: inset 0px 0px 0px 1px #8A8F98;
         outline: none;
         cursor: pointer;
+
+        @media (--small) {
+
+        }
+
+        @media (--default), (--wide), (--widest) {
+            box-shadow: inset 0px 0px 0px 1px #8A8F98;            
+        }
     }
 
     &__slide-button:before {
         display: block;
         content: '';
-        padding-top: calc(200/376*100%);
+
+        @media (--small) {
+            padding-top: 100px
+        }
+
+        @media (--default), (--wide), (--widest) {
+            padding-top: calc(200/376*100%);
+        }
     }
 
     &__slide-button span {
@@ -135,17 +160,19 @@
     }
 
     &__slide-button--selected span {
-        background-position: center -200%;
+        @media (--default), (--wide), (--widest) {
+            background-position: center -200%;
+        }
     }
 
     &__slide-selector > li:nth-child(even) &__slide-button {
-        @media (--small), (--default) {
+        @media (--default) {
             margin-left: -1px;
         }
     }
 
     &__slide-selector > li:not(:nth-of-type(-n+2)) &__slide-button {
-        @media (--small), (--default) {
+        @media (--default) {
             margin-top: -1px;
         }
     }
