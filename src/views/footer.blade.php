@@ -10,7 +10,8 @@
     </ol>
 
     <div class='footer__legal'>
-        <a href='/' class='footer__link footer__link--terms'>@lang('brochure.footer.terms')</a>
+        <a href='{{ route('terms') }}' target='legal' class='footer__link footer__link--terms'>@lang('brochure.footer.terms')</a>
+        <a href='{{ route('privacy') }}' target='legal' class='footer__link footer__link--privacy'>@lang('brochure.footer.privacy')</a>
         <span class='footer__copyright'>@lang('brochure.footer.copyright', ['year' => date('Y')])</span>
     </div>
 </footer>

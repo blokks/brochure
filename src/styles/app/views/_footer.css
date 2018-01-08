@@ -113,6 +113,11 @@
         }
     }
 
+    &__legal :not(:first-child) {
+        margin-left: 25px;        
+    }
+
+    &__link--privacy,
     &__link--terms {
         flex: none;
         color: var(--dark-text-color);
@@ -120,7 +125,6 @@
 
     &__copyright {
         @mixin legal;
-        margin-left: 25px;
         flex: none;
     }
 }
