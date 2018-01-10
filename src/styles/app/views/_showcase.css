@@ -190,13 +190,13 @@
         @mixin blokks-mono 13px;
         color: #44494E;
 
-        text-decoration: underline;
-        text-underline-position: under;
-        text-decoration-color: var(--default-stroke-color);
-        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid var(--default-stroke-color);
 
-        position: absolute * * 5px *;
-        width: 100%;
+        position: absolute * * 5px 50%;
+        transform: translateX(-50%);
         outline: none;
         z-index: -1;
 
@@ -212,6 +212,6 @@
     }
 
     &__slide-button--selected + &__website-link {
-        transform: translateY(35px);
+        transform: translate(-50%, 35px);
     }
 }
