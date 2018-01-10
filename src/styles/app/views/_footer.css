@@ -17,13 +17,12 @@
         flex-direction: row;
 
         @media (--small), (--default) {
-            margin-top: 15px;
+            margin-top: 25px;
         }
 
         @media (--wide), (--widest) {
             margin: 0 auto 0 25px;
         }
-
     }
 
     &__links > li {
