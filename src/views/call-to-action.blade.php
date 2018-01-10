@@ -9,7 +9,7 @@
         </h2>
 
         <a href="mailto:reminder@blokks.co?subject=@lang('brochure.call_to_action.mobile.reminder_subject')&body=@lang('brochure.call_to_action.mobile.reminder_body')" class='call-to-action__action-button'>
-            @lang('brochure.call_to_action.signup')
+            @lang('brochure.call_to_action.mobile.signup')
         </a>    
     </div>
 
@@ -23,7 +23,7 @@
         </h2>
 
         <a href='{{ route('signup') }}' class='call-to-action__action-button'>
-            @lang('brochure.call_to_action.signup')
+            @lang('brochure.call_to_action.desktop.signup')
         </a>
     </div>
 
