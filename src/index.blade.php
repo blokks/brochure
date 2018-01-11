@@ -6,6 +6,18 @@
     @include('brochure::views/navigation')
     @include('brochure::views/header')
     @include('brochure::views/how-it-works')
+
+	@include('brochure::views/poster', [
+		'link' => 'http://janusvandeneijnden.nl/',
+		'credits' => 'Photo by Janus van den Eijnden',
+		'preview' => '/brochure/dist/images/poster__tnw@160.jpg',
+		'images' => [
+			'/brochure/dist/images/poster__tnw@960.jpg',
+			'/brochure/dist/images/poster__tnw@1920.jpg',
+			'/brochure/dist/images/poster__tnw@2880.jpg'
+		]
+	])
+
     @include('brochure::views/showcase')
     @include('brochure::views/pricing')
 
