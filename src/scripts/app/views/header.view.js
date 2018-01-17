@@ -50,10 +50,4 @@ export default class extends AbstractView {
 			window.removeEventListener('scroll', this.handleScroll);
 		}
 	}
-
-	destroy() {
-		if (!this.destroyed) {
-			super.destroy();
-		}
-	}
 }

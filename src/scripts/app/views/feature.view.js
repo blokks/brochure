@@ -3,6 +3,7 @@ import AbstractView from 'app/views/abstract.view';
 import featureA from 'app/animations/blokks-feature-A-svg.json';
 import featureB from 'app/animations/blokks-feature-B-svg.json';
 import featureC from 'app/animations/blokks-feature-C-svg.json';
+import featureD from 'app/animations/blokks-feature-D-svg.json';
 
 export default class extends AbstractView {
 	initialize(options = {}) {
@@ -29,6 +30,10 @@ export default class extends AbstractView {
 			case 'featureC':
 				this.animation = new SVGAnim(featureC, 640, 400, 31);
 				break;
+
+			case 'featureD':
+				this.animation = new SVGAnim(featureD, 640, 400, 31);
+				break;
 		}
 
         this.animation.s.node.setAttribute('preserveAspectRatio', 'xMinYMin');
@@ -48,18 +53,6 @@ export default class extends AbstractView {
 		if (this.activated) {
 			super.deactivate();
 			this.animation.mc.stop()
-		}
-	}
-
-	enable() {
-		if (this.disabled) {
-			super.enable();
-		}
-	}
-
-	destroy() {
-		if (!this.destroyed) {
-			super.destroy();
 		}
 	}
 }

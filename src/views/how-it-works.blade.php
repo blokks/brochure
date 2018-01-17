@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works' data-animation='featureC'>
+    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works' data-animation='featureD'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
