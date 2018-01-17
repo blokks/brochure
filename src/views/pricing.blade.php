@@ -28,7 +28,8 @@
                     </p>
 
                     <ul class='price-option__features'>
-                        <li>@lang('brochure.pricing.free.features.no_restrictions')</li>
+                        <li>@lang('brochure.pricing.free.features.basic')</li>
+                        <li>@lang('brochure.pricing.free.features.preview')</li>
                         <li>@lang('brochure.pricing.free.features.no_fees')</li>
                     </ul>
                 </div>
@@ -51,8 +52,8 @@
                     </p>
 
                     <ul class='price-option__features'>
-                        <li>@lang('brochure.pricing.upgrade.features.no_recurring_costs')</li>
-                        <li>@lang('brochure.pricing.upgrade.features.excluding_vat')</li>
+                        <li>@lang('brochure.pricing.upgrade.features.unlock')</li>
+                        <li>@lang('brochure.pricing.upgrade.features.one-off-cost')</li>
                         <li>@lang('brochure.pricing.upgrade.features.discount')</li>
                     </ul>
                 </div>
@@ -60,7 +61,8 @@
         </div>
 
         <footer class='pricing__footer'>
-            @lang('brochure.pricing.footer')
+            <p>@lang('brochure.pricing.footer.bespoke')</p>
+            <p>@lang('brochure.pricing.footer.docs')</p>
         </footer>
     </div>
 </section>

@@ -29,7 +29,7 @@
                 <ol class='feature__features'>
                     <li>@lang('brochure.how_it_works.manage.features.multiple_days')</li>
                     <li>@lang('brochure.how_it_works.manage.features.export_data')</li>
-                    <li>@lang('brochure.how_it_works.manage.features.team_members')/li>
+                    <li>@lang('brochure.how_it_works.manage.features.team_members')</li>
                 </ol>
             </div>
 
@@ -55,9 +55,9 @@
                 </p>
 
                 <ol class='feature__features'>
-                    <li>@lang('brochure.how_it_works.embed.features.mobile_first')</li>
-                    <li>@lang('brochure.how_it_works.embed.features.customizable')</li>
-                    <li>@lang('brochure.how_it_works.embed.features.favorites')</li>
+                    <li>@lang('brochure.how_it_works.embed.features.simple')</li>
+                    <li>@lang('brochure.how_it_works.embed.features.synced')</li>
+                    <li>@lang('brochure.how_it_works.embed.features.optimized')</li>
                 </ol>
             </div>
 
@@ -85,8 +85,7 @@
                 <ol class='feature__features'>
                     <li>@lang('brochure.how_it_works.developers.features.layouts')</li>
                     <li>@lang('brochure.how_it_works.developers.features.customizable')</li>
-                    <li>@lang('brochure.how_it_works.developers.features.api')</li>
-                    <li>@lang('brochure.how_it_works.developers.features.documentation')</li>
+                    <li>@lang('brochure.how_it_works.developers.features.docs')</li>
                 </ol>
             </div>
 
@@ -113,8 +112,7 @@
 
                 <ol class='feature__features'>
                     <li>@lang('brochure.how_it_works.visitors.features.dashboard')</li>
-                    <li>@lang('brochure.how_it_works.visitors.features.favorites')</li>
-                    <li>@lang('brochure.how_it_works.visitors.features.friends')</li>
+                    <li>@lang('brochure.how_it_works.visitors.features.synced')</li>
                     <li>@lang('brochure.how_it_works.visitors.features.offline')</li>
                 </ol>
             </div>

@@ -56,7 +56,9 @@
 @define-mixin poster-credits {
     @mixin blokks-mono 13px/1.6;
     color: var(--darkest-text-color);
+    color: white;
     text-decoration: none;
+    mix-blend-mode: difference;
 }
 
 @define-mixin navitem {

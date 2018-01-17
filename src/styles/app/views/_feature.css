@@ -93,7 +93,7 @@
 
     &__media {
         position: relative;
-        flex: 2;
+        flex: 1.5;
 
         @media (--small), (--default) {
             order: -1;
