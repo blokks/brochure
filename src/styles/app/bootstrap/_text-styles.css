@@ -1,6 +1,5 @@
 @define-mixin title {
-    @mixin blokks-sans 34px;
-    line-height: 1.35;
+    @mixin blokks-sans 34px/1.35;
     color: var(--lightest-text-color);
 
     @media (--small) {
@@ -24,8 +23,7 @@
 }
 
 @define-mixin bodytext {
-    @mixin blokks-sans 18px;
-    line-height: 1.67;
+    @mixin blokks-sans 18px/1.67;
     color: inherit;
 
     @media (--small) {
@@ -39,6 +37,35 @@
 
     @media (--widest) {
         font-size: 18px;
+    }
+
+    a {
+        color: var(--blue-color);
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid;
+    }
+
+    a:hover {
+        color: var(--green-color);
+    }
+}
+
+@define-mixin small-bodytext {
+    @mixin blokks-sans 17px/1.67;
+    color: inherit;
+
+    @media (--small) {
+        font-size: 15px;
+    }
+
+    @media (--default), (--wide) {
+        font-size: responsive 15px 17px;
+        font-range: 480px 1000px;
+    }
+
+    @media (--widest) {
+        font-size: 17px;
     }
 
     a {

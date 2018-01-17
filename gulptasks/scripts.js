@@ -18,7 +18,7 @@ gulp.task('scripts', () => {
     const destination = 'dist/scripts';
 
     const debugOptions = {
-        title: 'CSS:', 
+        title: 'JS:', 
         showFiles: false,
     };
 

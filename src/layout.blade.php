@@ -18,7 +18,7 @@
         <link rel="canonical" href="https://blokks.co">
 
         <!-- Schema.org -->
-        <meta itemprop='name' content='Blokks'>
+        <meta itemprop='name' content='@yield('title')'>
         <meta itemprop='description' content='@lang('brochure.social.description')'>
         <meta itemprop='url' content='https://blokks.co'>
         <meta itemprop='keywords' content='@lang('brochure.social.keywords')'>
@@ -27,7 +27,7 @@
         <meta itemprop='inLanguage' content='en-US'>
 
         <!-- OpenGraph -->
-        <meta property='og:title' content='Blokks'>
+        <meta property='og:title' content='@yield('title')'>
         <meta property='og:description' content='@lang('brochure.social.description')'>
         <meta property='og:image' content='{{ url("/brochure/dist/images/og.png") }}'/>
         <meta property='og:type' content='website'>
@@ -36,7 +36,7 @@
         <meta property='og:locale' content='en_US' />
 
         <!-- Twitter Card -->
-        <meta name='twitter:title' content='Blokks' />
+        <meta name='twitter:title' content='@yield('title')' />
         <meta name='twitter:description' content='@lang('brochure.social.description')' />
         <meta name='twitter:card' content='summary_large_image'>
         <meta name='twitter:site' content='@BlokksHQ'>

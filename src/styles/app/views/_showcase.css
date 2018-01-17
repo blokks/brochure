@@ -27,14 +27,13 @@
     &__title {
         @mixin title;
         text-align: center;
-        margin-top: 15px;
     }
 
     &__subtitle {
         @mixin subtitle;
+        margin-top: 15px;
         color: var(--darkest-text-color);
         text-align: center;
-        order: -1;
     }
 
     &__slideshow {

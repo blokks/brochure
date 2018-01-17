@@ -22,16 +22,20 @@
     }
 
     &__title {
-        @mixin subtitle;
-        color: var(--dark-text-color);
+        @mixin title;
+        color: var(--darkest-text-color);
         text-align: center;
     }
 
     &__subtitle {
-        @mixin title;
-        color: var(--darkest-text-color);
-        text-align: center;
+        @mixin subtitle;
         margin-top: 15px;
+        color: var(--dark-text-color);
+        text-align: center;
+    }
+
+    &__vat {
+        font-size: 17px;
     }
 
     &__table {
@@ -49,7 +53,7 @@
     }
 
     &__footer {
-        @mixin bodytext;
+        @mixin small-bodytext;
         text-align: center;
         color: var(--darkest-text-color);
         margin-top: 60px;
