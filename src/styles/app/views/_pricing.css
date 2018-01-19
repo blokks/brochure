@@ -56,8 +56,15 @@
 
     &__footer {
         @mixin small-bodytext;
-        text-align: center;
         color: var(--darkest-text-color);
+        text-align: center;
+        line-height: 2;
         margin-top: 60px;
+
+        p {
+            @media (--small), (--default){
+                display: inline;
+            }
+        }
     }
 }

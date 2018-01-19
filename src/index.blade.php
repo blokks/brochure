@@ -9,7 +9,7 @@
 
 	@include('brochure::views/poster', [
 		'link' => 'http://janusvandeneijnden.nl/',
-		'credits' => 'Photo by Janus van den Eijnden',
+		'credits' => 'Photo taken at TNW Conference by Janus van den Eijnden',
 		'preview' => '/brochure/dist/images/poster__tnw@160.jpg',
 		'images' => [
 			'/brochure/dist/images/poster__tnw@960.jpg',
@@ -23,7 +23,7 @@
 
 	@include('brochure::views/poster', [
 		'link' => 'http://www.audriuskriauciunas.com/',
-		'credits' => 'Photo by Audrius Kriaučiūnas',
+		'credits' => 'Photo taken at The Correspondent Festival by Audrius Kriaučiūnas',
 		'preview' => '/brochure/dist/images/poster__corres@160.jpg',
 		'images' => [
 			'/brochure/dist/images/poster__corres@960.jpg',

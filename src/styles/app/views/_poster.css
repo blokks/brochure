@@ -36,5 +36,6 @@
     &__credits {
         @mixin poster-credits;
         position: absolute * 20px 10px *;
+        opacity: 0.6;
     }
 }

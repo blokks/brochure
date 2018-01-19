@@ -96,16 +96,16 @@
         size: 100%;
         z-index: -1;
         transform:  translateZ(0);
-
-        @media (--small), (--default) {
-            display: none;
-        }
     }
 
     &__animation svg:nth-of-type(1) {
         position: absolute 35% 70% * *;
         size: 20% 30%;
         animation: scale-square-animation-01 20s infinite;
+
+        @media (--small), (--default) {
+            display: none;
+        }
     }
 
     &__animation svg:nth-of-type(2) {
