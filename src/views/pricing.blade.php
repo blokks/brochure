@@ -61,8 +61,8 @@
         </div>
 
         <footer class='pricing__footer'>
-            <p>@lang('brochure.pricing.footer.bespoke')</p>
             <p>@lang('brochure.pricing.footer.docs')</p>
+            <p>@lang('brochure.pricing.footer.bespoke')</p>
         </footer>
     </div>
 </section>
