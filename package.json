@@ -8,7 +8,7 @@
     "url": "https://github.com/patrickpietens/blokks-onboarding.git"
   },
   "scripts": {
-    "reset": "find node_modules/* -type 'd' | grep -v 'pikaday' | xargs rm -rf  && npm install && cd node_modules && ln -s ../src/scripts/app app && cd ..",
+    "reset": "rm -rf node_modules && npm install && bower install && cd node_modules && ln -s ../src/scripts/app app && cd ..",
     "development": "NODE_ENV=development gulp",
     "staging": "npm update && NODE_ENV=staging gulp",
     "production": "npm update && NODE_ENV=production gulp"
