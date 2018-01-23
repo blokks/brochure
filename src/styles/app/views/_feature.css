@@ -71,6 +71,10 @@
         color: var(--green-color);
     }
 
+    &--visitors &__subtitle {
+        color:  var(--purple-color);
+    }
+
     &__description {
         @mixin bodytext;
         color: var(--light-text-color);
