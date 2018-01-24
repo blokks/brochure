@@ -12,9 +12,12 @@
     }
 
     @media (--small), (--default) {
-        /* justify-content: center; */
         height: 75vh;
         min-height: 500px;
+    }
+
+    @media (--default) {
+        justify-content: center;
     }
 
     @media (--wide), (--widest) {
