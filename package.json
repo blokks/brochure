@@ -100,7 +100,6 @@
     "addlistener.js": "^1.0.8",
     "detect-it": "^3.0.4",
     "director": "^1.2.8",
-    "howler": "^2.0.5",
     "jump.js": "^1.0.2",
     "lazysizes": "^4.0.1",
     "lodash.throttle": "^4.1.1",

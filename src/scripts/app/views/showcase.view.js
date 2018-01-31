@@ -7,6 +7,10 @@ export default class extends AbstractView {
 	initialize(options) {
 		super.initialize(options);
 		this.buttons = this.$('.showcase__slide-button');
+
+		if (!window.IntersectionObserver) {
+			this.enable();
+		}
 	}
 
 	selectSlide(selectedClient) {
@@ -24,6 +28,7 @@ export default class extends AbstractView {
 	}
 
 	onButton(event) {
+		console.log('clicl');
 		const selectedClient = event.currentTarget.getAttribute('data-client');
 		this.selectSlide(selectedClient);
 	}
@@ -31,6 +36,7 @@ export default class extends AbstractView {
 	enable() {
 		if (!this.enabled) {
 			super.enable();
+			console.log('enable');
 			this.buttons.on('click', this.onButton.bind(this));
 		}
 	}
