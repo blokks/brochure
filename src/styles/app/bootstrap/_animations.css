@@ -1,31 +1,19 @@
 @keyframes scale-square-animation-01 {
-    0%, 5% { height: 20%; }
-    10%, 50% { height: 40%; }
-    55%, 100% { height: 20%; }
+    0%, 5% { height: 35%; }
+    25%, 50% { height: 50%; }
+    75%, 100% { height: 35%; }
 }
 
 @keyframes scale-square-animation-02 {
-    0%, 15% { width: 30%; }
-    25%, 60% { width: 20%; }
-    70%, 100% { width: 30%; }
+    0%, 15% { height: 25%; }
+    35%, 60% { height: 40%; }
+    80%, 100% { height: 25%; }
 }
 
 @keyframes scale-square-animation-03 {
     0%, 20% { height: 40%; }
-    30%, 75% { height: 20%; }
-    85%, 100% { height: 40%; }
-}
-
-@keyframes scale-square-animation-04 {
-    0%, 55% { height: 45%; }
-    65%, 85% { height: 15%; }
-    95%, 100% { height: 45%; }
-}
-
-@keyframes scale-square-animation-05 {
-    0%, 30% { width: 20%; }
-    40%, 75% { width: 30%; }
-    85%, 100% { width: 20%; }
+    40%, 75% { height: 50%; }
+    95%, 100% { height: 40%; }
 }
 
 @keyframes rotate-square-animation-01 {

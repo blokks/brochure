@@ -36,7 +36,5 @@
         <svg viewBox='0 0 100 100' preserveAspectRatio='none'><path d='M0,0 100,0 100,100 0,100z'></path></svg>
         <svg viewBox='0 0 100 100' preserveAspectRatio='none'><path d='M0,0 100,0 100,100 0,100z'></path></svg>
         <svg viewBox='0 0 100 100' preserveAspectRatio='none'><path d='M0,0 100,0 100,100 0,100z'></path></svg>
-        <svg viewBox='0 0 100 100' preserveAspectRatio='none'><path d='M0,0 100,0 100,100 0,100z'></path></svg>
-        <svg viewBox='0 0 100 100' preserveAspectRatio='none'><path d='M0,0 100,0 100,100 0,100z'></path></svg>
     </div>
 </header>

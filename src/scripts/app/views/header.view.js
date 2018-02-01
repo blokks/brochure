@@ -31,7 +31,6 @@ export default class extends AbstractView {
 	}
 
 	handleScroll = (event) => {
-		console.log('scroll');
 		const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
 		const transform = 35 - 35 * (currentPosition / (this.viewport));
 
