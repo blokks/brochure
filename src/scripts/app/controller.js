@@ -81,7 +81,6 @@ export default class {
 	}
 
 	setCurrentView(path, animate = false) {
-		console.log(path);
 		this.navigationView.setCurrentView(path);
 
 		if (animate) {
@@ -92,7 +91,6 @@ export default class {
 	scrollIntoView(path, animate = true) {
 		this.jumping = true;
 		// path = path !== '/' ? path : '/header';
-
 
 		const selectedView = this.views.find(view => view.el.getAttribute('data-path') === path);
 		const jumpOptions = {
