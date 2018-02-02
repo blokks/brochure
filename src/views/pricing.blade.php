@@ -1,4 +1,4 @@
-<section class='pricing' data-view='pricing' data-path='/pricing'>
+<section class='pricing' data-view='pricing' data-path='/pricing/'>
     <div class='pricing__content'>
         <header>
             <h1 class='pricing__title'>

@@ -1,6 +1,6 @@
-<section class='how-it-works' data-view='how-it-works' data-path='/how-it-works'>
+<section class='how-it-works' data-view='how-it-works' data-path='/how-it-works/'>
     <header class='how-it-works__header'>
-        <a href='/how-it-works' data-link class='how-it-works__shortcut'>
+        <a href='/how-it-works/' data-link class='how-it-works__shortcut'>
             <h1 class='how-it-works__title'>
                 @lang('brochure.how_it_works.title')
             </h1>
@@ -11,7 +11,7 @@
         </a>
     </header>
 
-    <section class='how-it-works__feature feature feature--manage' data-view='feature' data-path='/how-it-works' data-animation='featureA'>
+    <section class='how-it-works__feature feature feature--manage' data-view='feature' data-path='/how-it-works/' data-animation='featureA'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    <section class='how-it-works__feature feature feature--embed' data-view='feature' data-path='/how-it-works' data-animation='featureB'>
+    <section class='how-it-works__feature feature feature--embed' data-view='feature' data-path='/how-it-works/' data-animation='featureB'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works' data-animation='featureC'>
+    <section class='how-it-works__feature feature feature--developers' data-view='feature' data-path='/how-it-works/' data-animation='featureC'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <section class='how-it-works__feature feature feature--visitors' data-view='feature' data-path='/how-it-works' data-animation='featureD'>
+    <section class='how-it-works__feature feature feature--visitors' data-view='feature' data-path='/how-it-works/' data-animation='featureD'>
         <div class='feature__content'>
             <div class='feature__info'>
                 <h1 class='feature__title'>

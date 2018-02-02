@@ -6,10 +6,10 @@
     </a>
 
     <ol class='navigation__links'>
-        <li><a href='/how-it-works' class='navigation__link' data-link>@lang('brochure.navigation.how_it_works')</a></li>
-        <li><a href='/showcase' class='navigation__link' data-link>@lang('brochure.navigation.showcase')</a></li>
-        <li><a href='/pricing' class='navigation__link' data-link>@lang('brochure.navigation.pricing')</a></li>
-        <li><a href='/contact' class='navigation__link' data-link>@lang('brochure.navigation.contact')</a></li>
+        <li><a href='/how-it-works/' class='navigation__link' data-link>@lang('brochure.navigation.how_it_works')</a></li>
+        <li><a href='/showcase/' class='navigation__link' data-link>@lang('brochure.navigation.showcase')</a></li>
+        <li><a href='/pricing/' class='navigation__link' data-link>@lang('brochure.navigation.pricing')</a></li>
+        <li><a href='/contact/' class='navigation__link' data-link>@lang('brochure.navigation.contact')</a></li>
         <li><a href='https://blokks.co/docs' target='docs' class='navigation__link navigation__link--docs'>Docs</a></li>
     </ol>
 

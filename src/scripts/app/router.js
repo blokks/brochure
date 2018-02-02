@@ -23,6 +23,8 @@ class Router {
 		event.preventDefault();
 
 		const path = url.parse(event.currentTarget.href).path;
+		console.log(path);
+
 		navigateTo(path, true);
 	}
 }

@@ -1,4 +1,4 @@
-<section class='showcase' data-view='showcase' data-path='/showcase'>
+<section class='showcase' data-view='showcase' data-path='/showcase/'>
     <div class='showcase__content'>
         <header class='showcase__header'>
             <h1 class='showcase__title'>
