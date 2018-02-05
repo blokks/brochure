@@ -20,28 +20,28 @@
         <ul class='showcase__slide-selector'>
             <li>
                 <button class='showcase__slide-button showcase__slide-button--selected' data-client='tnw'><span>The Next Web Conference</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                <a href='https://blokks.co/schedules/tnw2017/' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
             </li>
 
             <li>
                 <button class='showcase__slide-button' data-client='correspondent'><span>De Correspondent</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                <a href='https://decorrespondent.nl/evenementen/7/festival-der-vooruitgang/programma' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
             </li>
 
             <li>
                 <button class='showcase__slide-button' data-client='momentum'><span>Momentum</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                <a href='https://blokks.co/schedules/new-york-2017/' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
             </li>
 
             <li>
                 <button class='showcase__slide-button' data-client='itw'><span>Into The Woods Festival</span></button>
-                <a href='#' target='blokks-showcase' class='showcase__website-link'>
+                <a href='https://blokks.co/schedules/into-the-woods-festival-2017/' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
             </li>
