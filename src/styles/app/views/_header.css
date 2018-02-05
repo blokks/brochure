@@ -7,7 +7,7 @@
     &:before {
         display: block;
         width: 100%;
-        height: calc(250/1100*100%);
+        height: calc(350/1100*100%);
         content: '';
     }
 
