@@ -117,9 +117,9 @@
 
     &__slide-button {
         /* display: flex; */
+        display: block;
         position: relative;
         padding: 0;
-        width: 100%;
 
         background-color: var(--light-background-color);
         background-repeat: repeat;
@@ -130,7 +130,12 @@
         outline: none;
         cursor: pointer;
 
+        @media (--small) {
+            margin: 0 auto;
+        }
+
         @media (--default), (--wide), (--widest) {
+            width: 100%;
             box-shadow: inset 0px 0px 0px 1px #8A8F98;            
         }
     }
@@ -146,13 +151,16 @@
 
     &__slide-button span {
         @mixin text-replacement;
-        /* margin: auto; */
-        position: absolute 50% * * 50%;
-        transform: translate(-50%, -50%);
+        display: block;
         background-size: 100%;
 
         @media (--small) {
             background-position: center -100%;            
+        }
+
+        @media (--default), (--wide), (--widest) {
+            position: absolute 50% * * 50%;
+            transform: translate(-50%, -50%);
         }
     }
     
