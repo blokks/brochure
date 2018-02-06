@@ -12,6 +12,7 @@
     <div class='footer__legal'>
         <a href='{{ route('terms') }}' target='legal' class='footer__link footer__link--terms'>@lang('brochure.footer.terms')</a>
         <a href='{{ route('privacy') }}' target='legal' class='footer__link footer__link--privacy'>@lang('brochure.footer.privacy')</a>
+        <a href='https://blokks.pr.co/163673-blokks-helps-festivals-and-conferences-create-customise-and-manage-their-event-schedules' target='_blank' class='footer__link footer__link--privacy'>@lang('brochure.footer.press')</a>
         <span class='footer__copyright'>@lang('brochure.footer.copyright', ['year' => date('Y')])</span>
     </div>
 </footer>
