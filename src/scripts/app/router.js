@@ -13,18 +13,18 @@ class Router {
 			window.history.scrollRestoration = 'manual';
 		}
 
-		const path = url.parse(window.location.href).path;
-		controller.scrollIntoView(path, false);
-
-		$('main').classList.remove('loading');
+        window.on('load', event => {
+        	if(event.timeStamp < 2500) {
+				const path = url.parse(window.location.href).path;
+				controller.scrollIntoView(path);
+        	}
+        });
 	}
 
 	onLink(event) {
 		event.preventDefault();
 
 		const path = url.parse(event.currentTarget.href).path;
-		console.log(path);
-
 		navigateTo(path, true);
 	}
 }

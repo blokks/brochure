@@ -36,9 +36,12 @@ export default class extends AbstractView {
 				break;
 		}
 
+
         this.animation.s.node.setAttribute('preserveAspectRatio', 'xMinYMin');
         this.animation.s.node.removeAttribute('width');
         this.animation.s.node.removeAttribute('height');
+
+        this.container.removeChild(this.container.firstChild);
         this.container.appendChild(this.animation.s.node);
 	}
 

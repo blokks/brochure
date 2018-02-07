@@ -11,10 +11,37 @@
         </header>
 
         <div class='showcase__slideshow'>
-            <img data-src='{{ url('brochure/dist/images/showcase__tnw--visual.jpg') }}' width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected lazyload'>
-            <img data-src='{{ url('brochure/dist/images/showcase__correspondent--visual.jpg') }}' width='900' height='450' alt='De Correspondent' data-client='correspondent' class='showcase__slide lazyload'>
-            <img data-src='{{ url('brochure/dist/images/showcase__momentum--visual.jpg') }}' width='900' height='450' alt='Momentum' data-client='momentum' class='showcase__slide lazyload'>
-            <img data-src='{{ url('brochure/dist/images/showcase__itw--visual.jpg') }}' width='900' height='450' alt='Into the Woods' data-client='itw' class='showcase__slide lazyload'>
+            <img width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected lazyload'
+                data-sizes='auto' 
+                data-srcset='
+                    {{ url('brochure/dist/images/showcase__tnw--visual@400.jpg') }} 400w, 
+                    {{ url('brochure/dist/images/showcase__tnw--visual@800.jpg') }} 800w, 
+                    {{ url('brochure/dist/images/showcase__tnw--visual@1100.jpg') }} 1100w'/>
+
+            <img width='900' height='450' alt='De Correspondent' data-client='correspondent' class='showcase__slide lazyload'
+                data-sizes='auto' 
+                data-srcset='
+                    {{ url('brochure/dist/images/showcase__correspondent--visual@400.jpg') }} 400w, 
+                    {{ url('brochure/dist/images/showcase__correspondent--visual@800.jpg') }} 800w, 
+                    {{ url('brochure/dist/images/showcase__correspondent--visual@1100.jpg') }} 1100w'/>
+
+            <img width='900' height='450' alt='Momentum' data-client='momentum' class='showcase__slide lazyload'
+                data-sizes='auto' 
+                data-srcset='
+                    {{ url('brochure/dist/images/showcase__momentum--visual@400.jpg') }} 400w, 
+                    {{ url('brochure/dist/images/showcase__momentum--visual@800.jpg') }} 800w, 
+                    {{ url('brochure/dist/images/showcase__momentum--visual@1100.jpg') }} 1100w'/>
+
+            <img width='900' height='450' alt='Into the Woods' data-client='itw' class='showcase__slide lazyload'
+                data-sizes='auto' 
+                data-srcset='
+                    {{ url('brochure/dist/images/showcase__itw--visual@400.jpg') }} 400w, 
+                    {{ url('brochure/dist/images/showcase__itw--visual@800.jpg') }} 800w, 
+                    {{ url('brochure/dist/images/showcase__itw--visual@1100.jpg') }} 1100w'/>
+
+            <noscript>
+                <img src='{{ url('brochure/dist/images/showcase__tnw--visual@1100.jpg') }}' width='900' height='450' alt='The Next Web Conference' data-client='tnw' class='showcase__slide showcase__slide--selected lazyloaded'>
+            </noscript> 
         </div>
 
         <ul class='showcase__slide-selector'>

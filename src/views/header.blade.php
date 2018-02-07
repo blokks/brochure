@@ -29,7 +29,7 @@
     </div>
 
     <div id='preview' class='header__preview'>
-        <video id='previewPlayer' src='{{ url('/brochure/dist/videos/blokks-header.mp4') }}' reload='none' loop muted playsinline></video>
+        <video id='previewPlayer' src='{{ url('/brochure/dist/videos/blokks-header.mp4') }}' poster='{{ url('/brochure/dist/images/video__poster.jpg') }}'reload='none' loop muted playsinline></video>
     </div>
 
     <div class='header__animation'>

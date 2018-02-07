@@ -20,6 +20,10 @@
 
         @mixin subtitle;
         color: var(--light-text-color);
+
+        @media (--small), (--default) {
+            display: none;
+        }
     }
 
     svg {

@@ -34,7 +34,11 @@
             </div>
 
             <div class='feature__media'>
-                <div id='animationContainer' class='feature__animation-container'></div>
+                <div id='animationContainer' class='feature__animation-container'>
+                    <svg>
+                        <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#manage-first-frame') }}'></use>
+                    </svg>  
+                </div>
             </div>
         </div>
     </section>
@@ -62,7 +66,11 @@
             </div>
 
             <div class='feature__media'>
-                <div id='animationContainer' class='feature__animation-container'></div>
+                <div id='animationContainer' class='feature__animation-container'>
+                    <svg>
+                        <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#embed-first-frame') }}'></use>
+                    </svg>  
+                </div>
             </div>
         </div>
     </section>
@@ -90,7 +98,11 @@
             </div>
 
             <div class='feature__media'>
-                <div id='animationContainer' class='feature__animation-container'></div>
+                <div id='animationContainer' class='feature__animation-container'>
+                    <svg>
+                        <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#developers-first-frame') }}'></use>
+                    </svg> 
+                </div>
             </div>
         </div>
     </section>
@@ -118,7 +130,12 @@
             </div>
 
             <div class='feature__media'>
-                <div id='animationContainer' class='feature__animation-container'></div>
+                <div id='animationContainer' class='feature__animation-container'>
+                    <svg>
+                        <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#visitors-first-frame') }}'></use>
+                    </svg> 
+
+                </div>
             </div>
         </div>
     </section>

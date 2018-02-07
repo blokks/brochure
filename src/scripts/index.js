@@ -8,7 +8,5 @@ import svg4everybody from 'svg4everybody';
 import lazySizes from 'lazysizes';
 import Router from 'app/router';
 
-window.on('load', () => {
-	Router.initialize();
-	lazySizes.init();
-});
+lazySizes.init();
+Router.initialize();
