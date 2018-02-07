@@ -10,11 +10,11 @@
         <li><a href='/showcase/' class='navigation__link' data-link>@lang('brochure.navigation.showcase')</a></li>
         <li><a href='/pricing/' class='navigation__link' data-link>@lang('brochure.navigation.pricing')</a></li>
         <li><a href='/contact/' class='navigation__link' data-link>@lang('brochure.navigation.contact')</a></li>
-        <li><a href='https://blokks.co/docs' target='docs' class='navigation__link navigation__link--docs'>Docs</a></li>
+        <li><a href='https://blokks.co/docs' target='docs' class='navigation__link navigation__link--docs' rel='noopener'>Docs</a></li>
     </ol>
 
     <div class='navigation__account'>
-        <a href='{{ route("login") }}' class='navigation__link navigation__link--signin'>@lang('brochure.navigation.signin')</a>
-        <a href='{{ route("signup") }}' class='navigation__link navigation__link--try'>@lang('brochure.navigation.signup')</a>
+        <a href='{{ route("login") }}' rel='noopener' class='navigation__link navigation__link--signin'>@lang('brochure.navigation.signin')</a>
+        <a href='{{ route("signup") }}' rel='noopener' class='navigation__link navigation__link--try'>@lang('brochure.navigation.signup')</a>
     </div>
 </nav>

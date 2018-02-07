@@ -59,7 +59,7 @@
     &__animation {
         position: absolute 0 * * 0;
         size: 100%;
-        overflow: visible;
+        overflow: hidden;
         z-index: -1;
     }
 

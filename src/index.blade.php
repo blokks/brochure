@@ -3,6 +3,7 @@
 @section('title', trans('brochure.title'))
 @section('content')
 
+    @include('brochure::views/notification')
     @include('brochure::views/navigation')
     @include('brochure::views/header')
     @include('brochure::views/how-it-works')

@@ -113,3 +113,8 @@
     color: var(--lightest-text-color);
     text-decoration: none;
 }
+
+@define-mixin notification {
+    @mixin blokks-sans 15px/1.67;
+    color: var(--lightest-text-color);
+}

@@ -1,3 +1,4 @@
+@import 'views/notification';
 @import 'views/navigation';
 @import 'views/header';
 @import 'views/how-it-works';
@@ -20,7 +21,6 @@ body {
 
 main {
     min-width: 320px;
-    overflow: hidden;
 }
 
 main.loading {

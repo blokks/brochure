@@ -1,0 +1,7 @@
+.notification {
+	@mixin notification;
+
+	padding: 15px 20px;	
+	background-color: var(--purple-color);
+	text-align: center;
+}

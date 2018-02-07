@@ -97,7 +97,6 @@
         size: 100%;
         z-index: -1;
         transform:  translateZ(0);
-        overflow: hidden;
     }
 
     &__animation svg:nth-of-type(1) {

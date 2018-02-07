@@ -14,8 +14,8 @@ class Router {
 		}
 
         window.on('load', event => {
-        	if(event.timeStamp < 2500) {
-				const path = url.parse(window.location.href).path;
+			const path = url.parse(window.location.href).path;
+        	if(path !== '/' && event.timeStamp <= 3000) {
 				controller.scrollIntoView(path);
         	}
         });
