@@ -15,7 +15,8 @@ class Router {
 
 		const urlInfo = url.parse(window.location.href);
         window.on('load', event => {
-        	if (event.timeStamp <= 3000) {
+        	const difference = new Date().getTime() - startTime;
+        	if (difference <= 3000) {
         		// Show notification when there is any
 				const notification = document.getElementById('notification');
         		if (notification) {
