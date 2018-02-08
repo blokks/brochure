@@ -101,7 +101,9 @@ export default class {
 	}
 
 	showNotification() {
-		const jumpOptions = { duration: 400 };
-		jump('#notification', jumpOptions);
+		const notification = document.getElementById('notification');
+		if (notification) {
+			jump('#notification', { duration: 400 });
+		}
 	}
 }

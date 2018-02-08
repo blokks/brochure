@@ -17,15 +17,15 @@ class Router {
         window.on('load', event => {
         	if (event.timeStamp <= 3000) {
         		// Show notification when there is any
-        		if (urlInfo.query) {
+				const notification = document.getElementById('notification');
+        		if (notification) {
 					controller.showNotification();
         		}
 
-        		// Otherwise jump to path
+        		// Otherwise jump to deeplink
 	        	else if (urlInfo.pathname !== '/') {
 					controller.scrollIntoView(urlInfo.pathname, false);
 	        	}
-
         	}
         });
 	}
