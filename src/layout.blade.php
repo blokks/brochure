@@ -52,12 +52,10 @@
 
         </main>
 
-        <script>
-            var startedAt = new Date().getTime();
-        </script>
-
         <script src='{{ url('/brochure/dist/scripts/vendor/SnapSVGAnimator.js') }}' defer></script>
         <script src='{{ url('/brochure/dist/scripts/index.js') }}' defer></script>
+
+        @yield('scripts')
 
         <script>
             (function(i,s,o,g,r,a,m){

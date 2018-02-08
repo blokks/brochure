@@ -1,7 +1,8 @@
 .notification {
 	@mixin notification;
 
-	padding: 15px 20px;	
+	/* min-height: 40px; */
+	padding: 8px 20px;	
 	background-color: var(--pink-color);
 	text-align: center;
 }

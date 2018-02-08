@@ -3,7 +3,10 @@
 @section('title', trans('brochure.title'))
 @section('content')
 
-    @include('brochure::views/notification')
+	@if(isset($notification))
+	    @include('brochure::views/notification')
+	@endif
+
     @include('brochure::views/navigation')
     @include('brochure::views/header')
     @include('brochure::views/how-it-works')
@@ -36,4 +39,13 @@
     @include('brochure::views/call-to-action')
     @include('brochure::views/footer')
 
+@stop
+
+@section('scripts')
+	@if(isset($notification))
+		<script>
+			var notification = document.getElementById('notification');
+			window.scroll(0, notification.clientHeight);
+		</script>
+	@endif
 @stop

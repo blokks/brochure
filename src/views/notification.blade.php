@@ -1,5 +1,3 @@
-@if(isset($notification))
-	<aside class='notification'>
-		<p>{{ $notification }}</p>
-	</aside>
-@endif
+<aside id='notification' class='notification'>
+	<p>{{ $notification }}</p>
+</aside>

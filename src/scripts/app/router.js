@@ -13,10 +13,19 @@ class Router {
 			window.history.scrollRestoration = 'manual';
 		}
 
+		const urlInfo = url.parse(window.location.href);
         window.on('load', event => {
-			const path = url.parse(window.location.href).path;
-        	if(path !== '/' && event.timeStamp <= 3000) {
-				controller.scrollIntoView(path);
+        	if (event.timeStamp <= 3000) {
+        		// Show notification when there is any
+        		if (urlInfo.query) {
+					controller.showNotification();
+        		}
+
+        		// Otherwise jump to path
+	        	else if (urlInfo.pathname !== '/') {
+					controller.scrollIntoView(urlInfo.pathname, false);
+	        	}
+
         	}
         });
 	}
@@ -40,6 +49,8 @@ export const navigateTo = (path, animate = false) => {
 	if (controller.jumping) {
 		return;
 	}
+
+	const urlInfo = url.parse(window.location.href);
 
 	window.history.replaceState(null, document.title, path);
 	controller.setCurrentView(path, animate);

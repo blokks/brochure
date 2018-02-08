@@ -90,7 +90,6 @@ export default class {
 
 	scrollIntoView(path, animate = true) {
 		this.jumping = true;
-		// path = path !== '/' ? path : '/header';
 
 		const selectedView = this.views.find(view => view.el.getAttribute('data-path') === path);
 		const jumpOptions = {
@@ -99,5 +98,10 @@ export default class {
 		};
 
 		jump(selectedView.el, jumpOptions);
+	}
+
+	showNotification() {
+		const jumpOptions = { duration: 400 };
+		jump('#notification', jumpOptions);
 	}
 }

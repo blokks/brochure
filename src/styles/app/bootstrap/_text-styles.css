@@ -115,6 +115,6 @@
 }
 
 @define-mixin notification {
-    @mixin blokks-sans 15px/1.67;
+    @mixin blokks-mono 13px/1.67;
     color: var(--lightest-text-color);
 }
