@@ -42,12 +42,14 @@
 @stop
 
 @section('scripts')
+	<script>
+		var startTime = new Date().getTime();
+	</script>
+
 	@if(isset($notification))
 		<script>
-			var startTime = new Date().getTime();
-			
 			var notification = document.getElementById('notification');
 			window.scroll(0, notification.clientHeight);
-		</script>  		
+		</script>
 	@endif
 @stop

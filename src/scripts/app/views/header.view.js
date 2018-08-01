@@ -1,5 +1,4 @@
 import detectIt from 'detect-it';
-
 import AbstractView from 'app/views/abstract.view';
 
 export default class extends AbstractView {
@@ -7,13 +6,13 @@ export default class extends AbstractView {
 		super.initialize(options);
 
 		this.viewport = window.innerHeight;
-		
+
 		this.preview = $('#preview');
 		this.player = $('#previewPlayer');
 
 		if (!window.IntersectionObserver) {
 			this.enable();
-		}		
+		}
 	}
 
 	activate() {
@@ -30,14 +29,14 @@ export default class extends AbstractView {
 		}
 	}
 
-	handleScroll = (event) => {
+	handleScroll = () => {
 		const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
 		const transform = 35 - 35 * (currentPosition / (this.viewport));
 
 		this.preview.style.transform = `translate3d(0, ${transform}%, 0)`;
 	}
 
-	handleResize = (event) => {
+	handleResize = () => {
 		this.viewport = window.innerHeight;
 	}
 

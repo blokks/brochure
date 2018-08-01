@@ -32,8 +32,7 @@ export default class {
 					if (thisView) {
 						if (entry.isIntersecting) {
 							thisView.activate();
-						}
-						else {
+						} else {
 							thisView.deactivate();
 						}
 					}
@@ -51,7 +50,7 @@ export default class {
 			if (this.intersectionObserver) {
 				this.intersectionObserver.observe(element);
 			}
-		});		
+		});
 	}
 
 	addSubviews() {

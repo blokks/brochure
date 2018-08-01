@@ -39,7 +39,7 @@ export default class AbstractView {
 		if (this.activated)  {
 			this.activated = false;
 			this.disable();
-		}		
+		}
 	}
 
 	enable() {
