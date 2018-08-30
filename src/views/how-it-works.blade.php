@@ -7,7 +7,7 @@
 
             <svg>
                 <use xlink:href='{{ url('/brochure/dist/images/spritesheet.svg#arrow-down') }}'></use>
-            </svg>        
+            </svg>
         </a>
     </header>
 
