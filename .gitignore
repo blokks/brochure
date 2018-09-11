@@ -9,7 +9,6 @@ dist
 src/config.yml
 src/vendor
 node_modules/*
-!node_modules/app
 !node_modules/pikaday
 
 npm-debug.log

@@ -10,6 +10,14 @@
 
 	"plugins": [
         "babel-plugin-transform-runtime",
-        "transform-decorators-legacy"
+        "transform-decorators-legacy",
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "app": "./src/scripts/app"
+                }
+            }
+        ]
     ]
 }
