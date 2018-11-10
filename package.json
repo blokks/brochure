@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm run build:development",
-    "reset": "rm -rf node_modules && npm install && bower install && cd node_modules && ln -s ../src/scripts/app app && cd ..",
+    "reset": "rm -rf node_modules && npm install",
     "build:development": "NODE_ENV=development gulp",
     "build:staging": "npm update && NODE_ENV=staging gulp",
     "build:beta": "npm update && NODE_ENV=beta gulp",
