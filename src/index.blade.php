@@ -12,13 +12,13 @@
     @include('brochure::views/how-it-works')
 
 	@include('brochure::views/poster', [
-		'link' => 'http://janusvandeneijnden.nl/',
-		'credits' => 'TNW Conference — Photo by Janus van den Eijnden',
-		'preview' => '/brochure/dist/images/poster__tnw@160.jpg',
+		'link' => 'http://esns.nl/',
+		'credits' => 'ESNS - Eurosonic Noorderslag',
+		'preview' => '/brochure/dist/images/poster__esns@160.jpg',
 		'images' => [
-			'/brochure/dist/images/poster__tnw@960.jpg',
-			'/brochure/dist/images/poster__tnw@1920.jpg',
-			'/brochure/dist/images/poster__tnw@2880.jpg'
+			'/brochure/dist/images/poster__esns@960.jpg',
+			'/brochure/dist/images/poster__esns@1920.jpg',
+			'/brochure/dist/images/poster__esns@2880.jpg'
 		]
 	])
 
