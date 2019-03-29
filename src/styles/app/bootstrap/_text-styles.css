@@ -89,7 +89,7 @@
 }
 
 @define-mixin navitem {
-    @mixin blokks-mono 13px;
+    @mixin blokks-mono 14px;
     color: var(--light-text-color);
     text-decoration: none;
 
@@ -104,7 +104,7 @@
 }
 
 @define-mixin listitem {
-    @mixin blokks-mono 15px/1.86;
+    @mixin blokks-sans 18px/1.67;
     color: inherit;
 }
 
@@ -115,6 +115,6 @@
 }
 
 @define-mixin notification {
-    @mixin blokks-mono 13px/1.67;
+    @mixin blokks-sans 14px/1.67;
     color: var(--lightest-text-color);
 }
