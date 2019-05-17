@@ -23,7 +23,7 @@
 }
 
 @define-mixin bodytext {
-    @mixin blokks-sans 18px/1.67;
+    @mixin blokks-sans 16px/1.67;
     color: inherit;
 
     @media (--small) {
@@ -31,16 +31,16 @@
     }
 
     @media (--default), (--wide) {
-        font-size: responsive 16px 18px;
+        font-size: responsive 15px 17px;
         font-range: 480px 1000px;
     }
 
     @media (--widest) {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     a {
-        color: var(--blue-color);
+        color: var(--blue-color);MaisonNeue-Mono
         text-decoration: none;
         padding-bottom: 2px;
         border-bottom: 1px solid;
@@ -104,7 +104,7 @@
 }
 
 @define-mixin listitem {
-    @mixin blokks-sans 18px/1.67;
+    @mixin blokks-sans 17px/1.67;
     color: inherit;
 }
 
