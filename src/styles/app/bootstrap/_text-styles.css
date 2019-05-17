@@ -27,11 +27,11 @@
     color: inherit;
 
     @media (--small) {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     @media (--default), (--wide) {
-        font-size: responsive 15px 17px;
+        font-size: responsive 15px 15px;
         font-range: 480px 1000px;
     }
 
@@ -60,12 +60,12 @@
     }
 
     @media (--default), (--wide) {
-        font-size: responsive 15px 17px;
+        font-size: responsive 15px 16px;
         font-range: 480px 1000px;
     }
 
     @media (--widest) {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     a {
@@ -104,7 +104,7 @@
 }
 
 @define-mixin listitem {
-    @mixin blokks-sans 17px/1.67;
+    @mixin blokks-sans 16px/1.67;
     color: inherit;
 }
 
