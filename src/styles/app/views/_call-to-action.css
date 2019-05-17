@@ -42,12 +42,12 @@
         @mixin bodytext;
         text-align: center;
         color: var(--light-text-color);
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     &__action-button {
         @mixin button;
-        margin: 40px 0 0 0;
+        margin: 35px 0 0 0;
         padding: 22px 100px 20px 100px;
         background-color: var(--blue-color);
     }

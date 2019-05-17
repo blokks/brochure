@@ -61,8 +61,4 @@
         margin: 0;
         padding: 0 0 0 10px;
     }
-
-    &__features > li:not(:first-of-type) {
-        margin-top: 10px;
-    }
 }

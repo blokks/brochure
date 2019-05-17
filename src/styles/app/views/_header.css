@@ -66,7 +66,7 @@
         @mixin bodytext;
         color: var(--light-text-color);
         text-align: center;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     &__preview {
