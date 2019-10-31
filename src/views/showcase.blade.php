@@ -75,7 +75,7 @@
 
             <li>
                 <button class='showcase__slide-button' data-client='brainwash'><span>Brainwash Festival</span></button>
-                <a href='{{ @route('embeds.dedicated', ['schedule' => 'brainwash-festival-2018']) }}' target='blokks-showcase' class='showcase__website-link'>
+                <a href='{{ @route('embeds.dedicated', ['schedule' => 'brainwash-festival-2019']) }}' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
             </li>
