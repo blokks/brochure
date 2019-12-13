@@ -54,7 +54,7 @@
         <ul class='showcase__slide-selector'>
             <li>
                 <button class='showcase__slide-button showcase__slide-button--selected' data-client='esns'><span>Eurosonic Noorderslag</span></button>
-                <a href='https://esns.nl/timetable/eurosonic/' target='blokks-showcase' class='showcase__website-link'>
+                <a href='https://esns.nl/timetables/eurosonic/' target='blokks-showcase' class='showcase__website-link'>
                     @lang('brochure.showcase.visit_label')
                 </a>
             </li>
