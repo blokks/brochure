@@ -1,6 +1,7 @@
 @define-mixin title {
     @mixin blokks-sans 34px/1.35;
     color: var(--lightest-text-color);
+    font-weight: 400;
 
     @media (--small) {
         font-size: 30px;
