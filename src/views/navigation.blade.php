@@ -14,6 +14,6 @@
 
     <div class='navigation__account'>
         <a href='{{ route("login") }}' rel='noopener' class='navigation__link navigation__link--signin'>@lang('brochure.navigation.signin')</a>
-        {{-- <a href='{{ route("signup") }}' rel='noopener' class='navigation__link navigation__link--try'>@lang('brochure.navigation.signup')</a> --}}
+        <a href='{{ route("signup") }}' rel='noopener' class='navigation__link navigation__link--try'>@lang('brochure.navigation.signup')</a>
     </div>
 </nav>
