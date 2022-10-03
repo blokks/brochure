@@ -36,8 +36,8 @@
 		]
 	])
 
-    @include('brochure::views/call-to-action')
-    @include('brochure::views/footer')
+    {{-- @include('brochure::views/call-to-action') --}}
+    {{-- @include('brochure::views/footer') --}}
 
 @stop
 
